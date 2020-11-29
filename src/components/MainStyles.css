@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 body {
-  background-image: url("../assets/DSC_0239.JPG");
+  background: #003135;
   background-size: cover;
   display: flex;
   margin: 0;
