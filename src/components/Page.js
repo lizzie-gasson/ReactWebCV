@@ -1,6 +1,6 @@
 import React from 'react';
 import './ArticleStyles.css';
-import axios from 'axios';
+//import axios from 'axios';
 import AboutPage from '../pages/AboutPage';
 import SkillsPage from '../pages/SkillsPage';
 import WorkPage from '../pages/WorkPage';
