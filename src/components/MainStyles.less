@@ -20,7 +20,7 @@
 
 @tablet-min: 480px;
 @font-title: 'Abril Fatface', cursive;
-@font-body: 'Karma', serif;
+@font-body: 'Source Sans Pro', sans-serif;
 
 * {
     box-sizing: border-box;
@@ -32,23 +32,33 @@ html, body {
 }
 body {
     //background: linear-gradient(to bottom, #2b0a68, #0c031d);
-    background: #003135;
+    //background: #003135;
+    background-image: url("../assets/DSC_0239.JPG");
+    background-size: cover;
     display: flex;
-    //align-items: center;
-    //justify-content: center;
     margin: 0;
+
+    font-family: @font-body;
+}
+
+h1, h2, h3 {
+    font-family: @font-title;
+    // position: sticky;
+    // top: 0;
 }
 
 .frame{
 
-    .scrollbar-wrapper{
-        margin: 30px 10%;
-        background-color: #fff;
-        height: 2px;
+    .header{
+        margin: 10px 10px 0;
+        color: #fff;
+        //text-align: center;
+        font-family: @font-title;
 
         @media(min-width: @tablet-min){
-            margin: 30px 20px;
+            margin: 20px 20px 0 20px;
         }
+
     }
     
     .page-map-wrapper {
@@ -60,7 +70,7 @@ body {
     
         .page-map {
             display: flex;
-            //padding: 0 30px;
+            padding: 10px 0;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             scroll-padding-left: 7%;
@@ -69,6 +79,7 @@ body {
 
             @media (min-width: @tablet-min){
                 scroll-padding-left: 15%;
+                padding: 15px 0 25px;
             }
     
             .page {
@@ -76,9 +87,9 @@ body {
                 flex-shrink: 0;
                 width: 86%;
                 //max-width: 800px;
-                height: calc(100vh - 80px);
+                height: calc(100vh - 65px);
                 margin-right: 5%;
-                //border-radius: 10px;
+                box-shadow: 0 0 10px #00000057;
                 background: #ffffff;
                 transform-origin: center center;
                 transform: scale(1);
@@ -97,7 +108,7 @@ body {
                     padding: 30px;
                     width: 70%;
                     margin-right: 10%;
-                    height: calc(100vh - 100px);
+                    height: calc(100vh - 105px);
                 }
 
                 &:first-of-type{
@@ -107,15 +118,13 @@ body {
             
         }
         .page-map::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
+            height: 2px;
         }
         .page-map::-webkit-scrollbar-thumb {
-            background: black;
-            border-radius: 10px;
+            background: #ffffff3d;
         }
         .page-map::-webkit-scrollbar-track {
-            background: transparent;
+            background: #ffffff12;
         }
     
     }

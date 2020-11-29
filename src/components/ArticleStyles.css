@@ -1,7 +1,12 @@
-.page h1 {
+.page h1,
+.page h2,
+.page h3 {
   font-family: 'Abril Fatface', cursive;
 }
 .page p {
-  font-family: 'Karma', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left;
+}
+.page .work .work-element {
   text-align: left;
 }

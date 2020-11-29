@@ -1,16 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import $ from 'jquery';
 import './MainStyles.css';
 import PageMap from './PageMap';
+import Header from './Header';
 
 
 //create react component
 class App extends React.Component {
 
+
     render() {
         return (
             <div className="frame">
-                <div className="scrollbar-wrapper"></div>
+                <Header />
                 <PageMap />
             </div>
         )

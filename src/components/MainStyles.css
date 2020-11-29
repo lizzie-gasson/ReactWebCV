@@ -7,18 +7,25 @@ body {
   overflow: hidden;
 }
 body {
-  background: #003135;
+  background-image: url("../assets/DSC_0239.JPG");
+  background-size: cover;
   display: flex;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-.frame .scrollbar-wrapper {
-  margin: 30px 10%;
-  background-color: #fff;
-  height: 2px;
+h1,
+h2,
+h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+.frame .header {
+  margin: 10px 10px 0;
+  color: #fff;
+  font-family: 'Abril Fatface', cursive;
 }
 @media (min-width: 480px) {
-  .frame .scrollbar-wrapper {
-    margin: 30px 20px;
+  .frame .header {
+    margin: 20px 20px 0 20px;
   }
 }
 .frame .page-map-wrapper {
@@ -28,6 +35,7 @@ body {
 }
 .frame .page-map-wrapper .page-map {
   display: flex;
+  padding: 10px 0;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-padding-left: 7%;
@@ -37,14 +45,16 @@ body {
 @media (min-width: 480px) {
   .frame .page-map-wrapper .page-map {
     scroll-padding-left: 15%;
+    padding: 15px 0 25px;
   }
 }
 .frame .page-map-wrapper .page-map .page {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 86%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 65px);
   margin-right: 5%;
+  box-shadow: 0 0 10px #00000057;
   background: #ffffff;
   transform-origin: center center;
   transform: scale(1);
@@ -62,20 +72,18 @@ body {
     padding: 30px;
     width: 70%;
     margin-right: 10%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 105px);
   }
 }
 .frame .page-map-wrapper .page-map .page:first-of-type {
   margin-left: 10%;
 }
 .frame .page-map-wrapper .page-map::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  height: 2px;
 }
 .frame .page-map-wrapper .page-map::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 10px;
+  background: #ffffff3d;
 }
 .frame .page-map-wrapper .page-map::-webkit-scrollbar-track {
-  background: transparent;
+  background: #ffffff12;
 }
