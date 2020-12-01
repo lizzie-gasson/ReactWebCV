@@ -39,9 +39,9 @@ class SkillsPage extends React.Component {
                     <p>Some photography awards of mine:</p>
                     <ul>
                         <li>1st in AS Photography (2014)</li>
-                        <li>Young designer of the year award 2014, 2nd place</li>
+                        <li>Young designer of the year award 2nd place (2014)</li>
                         <li>1st= in A2 Photography (2015)</li>
-                        <li>Young designer of the year award 2015, 2nd place</li>
+                        <li>Young designer of the year award 2nd place (2015)</li>
                     </ul>
                 </div>
                 
