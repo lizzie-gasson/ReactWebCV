@@ -3,10 +3,16 @@
 .page h3 {
   font-family: 'Abril Fatface', cursive;
 }
+.page h1 {
+  text-align: center;
+}
 .page p {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: left;
 }
 .page .work .work-element {
   text-align: left;
+}
+.page .skills .skill-element {
+  margin-bottom: 50px;
 }

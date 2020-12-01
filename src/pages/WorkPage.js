@@ -9,20 +9,26 @@ class WorkPage extends React.Component {
 
                 <div className="work-element">
                     <h2>Developer - IAG</h2>
-                    <h3>July 2018 - Current</h3>
-                    <p>At IAG I have completed work on the AMI, State and NZI websites. I have improved my web development skills and had personal mentoring with all the relevent languages, especially javascript. It has also given me an understanding of the agile methodology along with the meetings and steps that are taken.</p>
+                    <h3>July 2018 - Now</h3>
+                    <p>I started working at IAG as a grad during my final semester of study. The team was really friendly and supportive as I learned about the technologies and processes that they use. I work on the quote and buy portals now, primarily doing front end work but as a team we all work on the different areas including the back end, analytics and databases. I have learned a lot about IAG as a business, the insurance industry, and also the agile methodology.</p>
                 </div>
                 
                 <div className="work-element">
+                    <h2>Content creator - Daikin</h2>
+                    <h3>August 2020 - October 2020</h3>
+                    <p>I worked with Daikin on their Healthy Homes competition to document the process of the home makeover, and tell the story of the winner. I took photos and filmed throughout the process, using adobe premiere and audition to put the final products together.</p>
+                </div>
+
+                <div className="work-element">
                     <h2>Content creator - Middlemore Foundation</h2>
-                    <h3>Feb 2019 – Current</h3>
-                    <p>I have recently started creating film and photography content for the Middlemore foundation to be used in social media.</p>
+                    <h3>Feb 2019</h3>
+                    <p>I worked with the Middlemore foundation creating video content to be used in social media.</p>
                 </div>
                 
                 <div className="work-element">
                     <h2>Sales assistant - Zara</h2>
                     <h3>Dec 2016 – July 2018</h3>
-                    <p>At Zara, I worked with a big team of people. I often had to work to complete tasks as a group, and other times I worked independently, always to strict time targets. Quite often, I had to decide on my own how to complete a task in the most efficient way, or to organize and delegate jobs to others. I worked in almost every aspect of the store, from customer service on the shop floor, to unpacking and processing deliveries in the stockroom.</p>
+                    <p>At Zara, I worked with a big team of people. I often had to work to complete tasks as a group, other times I worked independently, always to strict time targets. Quite often I had to decide on my own how to complete a task in the most efficient way, or to organize and delegate jobs to others. I worked in almost every aspect of the store, from customer service on the shop floor, to unpacking and processing deliveries in the stockroom.</p>
                 </div>
                 
                 <div className="work-element">
@@ -32,21 +38,21 @@ class WorkPage extends React.Component {
                 </div>
                 
                 <div className="work-element">
-                    <h2>Sales assistant - Stonz Jewellers</h2>
+                    <h2>Christmas Sales assistant - Stonz Jewellers</h2>
                     <h3>Nov 2015 – Dec 2015</h3>
-                    <p>During my time at Stonz I improved my communication and customer service skills. I had to learn a lot of information about the product very quickly to be able to sell effectively.</p>
+                    <p>I worked as a Christmas sales assistant at Stonz Jewellers in the summer after my last year of highschool. During my time at Stonz I improved my communication and customer service skills a lot as it was my first retail job. I had to learn a lot of information about the product very quickly to be able to sell effectively.</p>
                 </div>
 
                 <div className="work-element">
                     <h2>Photographer - KJA Photography</h2>
                     <h3>2014 – 2017</h3>
-                    <p>As a photographer for KJA I have worked at events such as weddings, balls and even New Zealand Fashion Week. At smaller events I have gone by myself to take the photos. At events like balls I have worked in a team of two or three. Although most jobs were for events, I also did some other types of photography like interior design.</p>
+                    <p>New Zealand Fashion Week. At smaller events I would go by myself to take the photos, at events like balls I worked in a team of two or three. Most of the jobs were for events, but I also did a few other interesting things like interior design.</p>
                 </div>
                 
                 <div className="work-element">
                     <h2>Stallholder - Clevedon Farmers Market</h2>
                     <h3>2013 – Ongoing</h3>
-                    <p>Over the years I have helped sell fruit at the local farmers market with my family. It is a very social event as I would have conversations with many of the customers and other stallholders.</p>
+                    <p>Over the years I have helped sell mandarins and avocados at the local farmers market with my family. We grow them at our family home, so I would sometimes help with the picking of fruit and separating them into bags, other times just helping on the day to sell at the stall.</p>
                 </div>
             </div>
         )
