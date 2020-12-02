@@ -20,6 +20,7 @@
 
 @tablet-min: 480px;
 @desktop-min: 1200px;
+@lighter: .5;
 @font-title: 'Abril Fatface', cursive;
 @font-body: 'Source Sans Pro', sans-serif;
 
@@ -53,20 +54,61 @@ h1, h2, h3 {
     .header{
         margin: 10px 10px 0;
         color: #fff;
-        //text-align: center;
         font-family: @font-title;
 
         @media(min-width: @tablet-min){
             margin: 20px 20px 0 20px;
         }
+        span.title {
+            opacity: @lighter;
+        }
 
+        .contact-links{
+            float: right;
+            display: flex;
+
+            .link{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-left: 20px;
+                opacity: @lighter;
+                transition: 0.2s;
+
+                &.linkedin{
+                    background-image: url(../assets/linkedin-white.svg);
+                    background-size: 90%;
+                }
+
+                &.github{
+                    background-image: url(../assets/github-white.svg);
+                    background-size: 90%;
+                }
+
+                &.codepen{
+                    background-image: url(../assets/codepen-white.svg);
+                }
+
+                &.email{
+                    background-image: url(../assets/envelope.svg);
+                }
+
+                &:hover{
+                    width: 22px;
+                    height: 22px;
+
+                    opacity: 1;
+                }
+
+            }
+        }
     }
     
     .page-map-wrapper {
         width: 100vw;
-        //overflow: hidden;
-    
-        
     
         .page-map {
             display: flex;
@@ -142,10 +184,6 @@ h1, h2, h3 {
         }
         .page-map::-webkit-scrollbar {
             height: 2px;
-
-            // &:hover{
-            //     height: 5px;
-            // }
         }
         .page-map::-webkit-scrollbar-thumb {
             background: #ffffff3d;
