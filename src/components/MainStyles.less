@@ -19,6 +19,7 @@
 // }
 
 @tablet-min: 480px;
+@desktop-min: 1200px;
 @font-title: 'Abril Fatface', cursive;
 @font-body: 'Source Sans Pro', sans-serif;
 
@@ -63,7 +64,7 @@ h1, h2, h3 {
     
     .page-map-wrapper {
         width: 100vw;
-        overflow: hidden;
+        //overflow: hidden;
     
         
     
@@ -72,47 +73,70 @@ h1, h2, h3 {
             padding: 10px 0;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
-            scroll-padding-left: 7%;
+            //scroll-padding-left: 7%;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
 
             @media (min-width: @tablet-min){
-                scroll-padding-left: 15%;
+                //scroll-padding-left: 15%;
                 padding: 15px 0 25px;
             }
     
             .page {
-                scroll-snap-align: start;
+                scroll-snap-align: center;
                 flex-shrink: 0;
                 width: 86%;
-                //max-width: 800px;
                 height: calc(100vh - 65px);
                 margin-right: 5%;
                 box-shadow: 0 0 10px #00000057;
                 background: #ffffff;
-                transform-origin: center center;
-                transform: scale(1);
-                transition: transform 0.5s;
                 position: relative;
-                //display: flex;
-                justify-content: center;
-                align-items: center;
-                //font-size: 100px;
                 overflow-y: scroll;
-                overflow-x: hidden;
                 padding: 15px;
                 border-radius: 2px;
+
+                &:first-of-type{
+                    margin-left: calc((100vw - 86%)/2);
+                }
+
+                &:last-of-type{
+                    background: transparent;
+                    box-shadow: none;
+                    width: 1%;
+                    padding: 0;
+                }
 
                 @media (min-width: @tablet-min){
                     padding: 30px;
                     width: 70%;
                     margin-right: 10%;
                     height: calc(100vh - 105px);
+
+                    &:first-of-type{
+                        margin-left: calc((100vw - 70%)/2);
+                    }
                 }
 
-                &:first-of-type{
-                    margin-left: 10%;
+                @media (min-width: @desktop-min){
+                    margin-right: 15%;
+                    width: 750px;
+
+                    &:first-of-type{
+                        margin-left: calc((100vw - 750px)/2);
+                    }
+                    &:last-of-type{
+                        background: transparent;
+                        box-shadow: none;
+                        width: calc((25vw - 235px));
+                        padding: 0;
+                    }
                 }
+
+                // transform-origin: center center;
+                // transform: scale(1);
+                // transition: transform 0.5s;
+
+
             }
             
         }

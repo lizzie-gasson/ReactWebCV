@@ -10,6 +10,7 @@ class PageMap extends React.Component {
                     <Page id="1" name="skills" />
                     <Page id="2" name="work"/>
                     <Page id="3" name="projects" />
+                    <Page id="4" name="space" />
                 </div>
             </div>
             

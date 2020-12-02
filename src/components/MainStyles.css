@@ -30,41 +30,41 @@ h3 {
 }
 .frame .page-map-wrapper {
   width: 100vw;
-  overflow: hidden;
 }
 .frame .page-map-wrapper .page-map {
   display: flex;
   padding: 10px 0;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-padding-left: 7%;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 @media (min-width: 480px) {
   .frame .page-map-wrapper .page-map {
-    scroll-padding-left: 15%;
     padding: 15px 0 25px;
   }
 }
 .frame .page-map-wrapper .page-map .page {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   flex-shrink: 0;
   width: 86%;
   height: calc(100vh - 65px);
   margin-right: 5%;
   box-shadow: 0 0 10px #00000057;
   background: #ffffff;
-  transform-origin: center center;
-  transform: scale(1);
-  transition: transform 0.5s;
   position: relative;
-  justify-content: center;
-  align-items: center;
   overflow-y: scroll;
-  overflow-x: hidden;
   padding: 15px;
   border-radius: 2px;
+}
+.frame .page-map-wrapper .page-map .page:first-of-type {
+  margin-left: calc((100vw - 86%)/2);
+}
+.frame .page-map-wrapper .page-map .page:last-of-type {
+  background: transparent;
+  box-shadow: none;
+  width: 1%;
+  padding: 0;
 }
 @media (min-width: 480px) {
   .frame .page-map-wrapper .page-map .page {
@@ -73,9 +73,24 @@ h3 {
     margin-right: 10%;
     height: calc(100vh - 105px);
   }
+  .frame .page-map-wrapper .page-map .page:first-of-type {
+    margin-left: calc((100vw - 70%)/2);
+  }
 }
-.frame .page-map-wrapper .page-map .page:first-of-type {
-  margin-left: 10%;
+@media (min-width: 1200px) {
+  .frame .page-map-wrapper .page-map .page {
+    margin-right: 15%;
+    width: 750px;
+  }
+  .frame .page-map-wrapper .page-map .page:first-of-type {
+    margin-left: calc((100vw - 750px)/2);
+  }
+  .frame .page-map-wrapper .page-map .page:last-of-type {
+    background: transparent;
+    box-shadow: none;
+    width: calc(25vw - 235px);
+    padding: 0;
+  }
 }
 .frame .page-map-wrapper .page-map::-webkit-scrollbar {
   height: 2px;

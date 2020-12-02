@@ -30,6 +30,8 @@ class Page extends React.Component {
             return <WorkPage />;
         case 'projects':
             return <ProjectsPage />;
+        case 'space':
+            return '';
         default:
             return 'Page not loaded';
         }
