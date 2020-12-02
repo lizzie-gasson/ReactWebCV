@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -27,6 +30,43 @@ h3 {
   .frame .header {
     margin: 20px 20px 0 20px;
   }
+}
+.frame .header span.title {
+  opacity: 0.5;
+}
+.frame .header .contact-links {
+  float: right;
+  display: flex;
+}
+.frame .header .contact-links .link {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.frame .header .contact-links .link.linkedin {
+  background-image: url(../assets/linkedin-white.svg);
+  background-size: 90%;
+}
+.frame .header .contact-links .link.github {
+  background-image: url(../assets/github-white.svg);
+  background-size: 90%;
+}
+.frame .header .contact-links .link.codepen {
+  background-image: url(../assets/codepen-white.svg);
+}
+.frame .header .contact-links .link.email {
+  background-image: url(../assets/envelope.svg);
+}
+.frame .header .contact-links .link:hover {
+  width: 22px;
+  height: 22px;
+  opacity: 1;
 }
 .frame .page-map-wrapper {
   width: 100vw;
