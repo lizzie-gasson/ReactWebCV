@@ -2,6 +2,7 @@ import React from 'react';
 import Page from './Page';
 
 class PageMap extends React.Component {
+
     render () {
         return (
             <div className="page-map-wrapper">

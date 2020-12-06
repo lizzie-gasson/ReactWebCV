@@ -1,5 +1,6 @@
 import React from 'react';
 import './ArticleStyles.css';
+import ReactDOM from 'react-dom';
 //import axios from 'axios';
 import AboutPage from '../pages/AboutPage';
 import SkillsPage from '../pages/SkillsPage';
@@ -11,14 +12,31 @@ import ProjectsPage from '../pages/ProjectsPage';
 
 class Page extends React.Component {
 
-    state= { title : '', content: ''};
+    state= { inView : false };
 
-    // componentDidMount() {
-    //     axios.get('content.json').then(res => {
-    //         const thispagecontent = res.data[0].pageContent[this.props.id];
-    //         this.setState({title: thispagecontent.title, content: thispagecontent.content});
-    //     })
-    // };
+    // getPageInView = () => {
+    //     console.log("get page in view");
+    //     const pos = ReactDOM.findDOMNode(this).getBoundingClientRect();
+
+    //     if (pos.left > 0 && pos.right < window.innerWidth && this.props.name !== 'space'){
+    //         this.setState({ inView: true });
+    //         console.log("Active page:", this.props.name)
+    //     } else {
+    //         this.setState({ inView: false });
+    //     }
+
+    // }
+
+    scrollToView = () => {
+        ReactDOM.findDOMNode(this).scrollIntoView();
+        console.log(ReactDOM.findDOMNode(this).getBoundingClientRect().left);
+        // this.getPageInView();
+    }
+
+
+    componentDidMount() {
+        document.addEventListener('click', this.getPageInView);
+    }
 
     renderSwitch(param) {
         switch(param) {
@@ -37,10 +55,11 @@ class Page extends React.Component {
         }
       }
 
+    //className={"page " + (this.state.inView ? 'active' : '')} <- class to show active page
 
     render () {
         return (
-            <div className="page">
+            <div onClick={this.scrollToView} className="page "> 
                 {this.renderSwitch(this.props.name)}
             </div>
         )
