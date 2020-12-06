@@ -1,3 +1,11 @@
+.page {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page.active,
+.page:hover {
+  opacity: 1;
+}
 .page h1,
 .page h2,
 .page h3 {

@@ -3,6 +3,16 @@
 @font-body: 'Source Sans Pro', sans-serif;
 
 .page{
+
+    transition: 0.5s;
+    cursor: pointer;
+    //opacity: 0.4;
+
+    &.active, &:hover {
+        opacity: 1;
+    }
+    
+
     h1, h2, h3 {
         font-family: @font-title;
         // position: sticky;
