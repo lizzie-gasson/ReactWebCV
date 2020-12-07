@@ -26,13 +26,11 @@ class Page extends React.Component {
     //     }
 
     // }
-
     
-
     scrollToView = () => {
         ReactDOM.findDOMNode(this).scrollIntoView();
         console.log(ReactDOM.findDOMNode(this).getBoundingClientRect().left);
-        // this.getPageInView();
+        // this.getPageInView();   
     }
 
 
