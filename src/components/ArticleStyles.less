@@ -1,6 +1,11 @@
 @tablet-min: 480px;
+@desktop-min: 1200px;
+@lighter: .5;
 @font-title: 'Abril Fatface', cursive;
 @font-body: 'Source Sans Pro', sans-serif;
+@primary-col: #003135;
+@secondary-col: #249c92;
+@box-shadow: 5px 5px 12px 0px #00000040;
 
 .page{
 
@@ -26,16 +31,30 @@
         text-align: left;
     }
 
+    a{
+        text-decoration: none;
+        color: @secondary-col;
+    }
+    
+    iframe{
+        height: 400px;
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        margin: 5%;
+        box-shadow: @box-shadow;
+    }
+
+    .text-group{
+        margin-bottom: 50px;
+    }
+
 
     .work{
         .work-element{
             text-align: left;
-        }
-    }
-
-    .skills {
-        .skill-element{
             margin-bottom: 50px;
         }
     }
+
 }
