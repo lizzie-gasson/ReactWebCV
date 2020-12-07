@@ -15,7 +15,7 @@ class WorkPage extends React.Component {
                 
                 <div className="work-element">
                     <h2>Content creator - Daikin</h2>
-                    <h3>August 2020 - October 2020</h3>
+                    <h3>Aug 2020 - Oct 2020</h3>
                     <p>I worked with Daikin on their Healthy Homes competition to document the process of the home makeover, and tell the story of the winner. I took photos and filmed throughout the process, using adobe premiere and audition to put the final products together.</p>
                 </div>
 

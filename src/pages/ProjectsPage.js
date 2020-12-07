@@ -7,9 +7,12 @@ class ProjectsPage extends React.Component {
             <div className="projects">
                 <h1>Projects and Examples of my work</h1>
                  <h2>Development</h2>
-                 <p>Coming soon!</p>
-        
-
+                 <a target="_blank" rel="noopener noreferrer"  href="https://lizzie-website.web.app/">My previous website</a>
+                 <div className="iframe-wrap">
+                    <iframe className="iframe-zoomed" src="https://lizzie-website.web.app/"></iframe>
+                 </div>
+                 
+      
                 <h2>Photography and film</h2>
                 <ul>
                     <li>
@@ -34,6 +37,11 @@ class ProjectsPage extends React.Component {
                         </ul>
                     </li>
                 </ul>
+
+                {/* <div className="iframe-wrap">
+                    <iframe className="iframe-zoomed" src="https://denise177.wixsite.com/glasstemplenurseries"></iframe>
+                </div> */}
+                
             </div>
         )
     }
