@@ -7,7 +7,12 @@ class ProjectsPage extends React.Component {
             <div className="projects">
                 <h1>Projects and Examples of my work</h1>
                  <h2>Development</h2>
-                 <a target="_blank" rel="noopener noreferrer"  href="https://lizzie-website.web.app/">My previous website</a>
+
+                <p>Here is one of my projects learning react and working with APIs. Based on a project from the course <a  target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/react-redux/">Modern React with Redux</a>. I'm planning to use this as a base to experiment with more APIs and create something fun. Try searching something!</p>
+                 <div className="iframe-wrap">
+                    <iframe className="iframe-zoomed" src="https://reactpics-73174.web.app/"></iframe>
+                 </div>
+                 <p>Check out <a target="_blank" rel="noopener noreferrer"  href="https://lizzie-website.web.app/">my previous website</a> that I made after graduating from University.</p>
                  <div className="iframe-wrap">
                     <iframe className="iframe-zoomed" src="https://lizzie-website.web.app/"></iframe>
                  </div>
