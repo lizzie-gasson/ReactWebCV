@@ -100,15 +100,15 @@ h1, h2, h3 {
     
         .page-map {
             display: flex;
+            //flex-direction: column;
             padding: 10px 0;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
-            //scroll-padding-left: 7%;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
+            //height: calc(100vh - 50px);
 
             @media (min-width: @tablet-min){
-                //scroll-padding-left: 15%;
                 padding: 15px 0 25px;
             }
     
