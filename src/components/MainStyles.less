@@ -40,12 +40,14 @@ h1, h2, h3 {
 .frame{
 
     .header{
-        margin: 10px 10px 0;
+        margin: 10px;
         color: #fff;
-        font-family: @font-title;
+        font-family: @font-title;    
+        z-index: 1;
+        position: relative;
 
         @media(min-width: @tablet-min){
-            margin: 20px 20px 0 20px;
+            width: calc(100vw - 40px);
         }
         span.title {
             opacity: @lighter;
@@ -95,40 +97,66 @@ h1, h2, h3 {
         }
     }
     
-    .page-map-wrapper {
-        width: 100vw;
-    
-        .page-map {
-            display: flex;
-            flex-direction: column;
-            overflow: scroll;
-            height: calc(100vh - 50px);
 
+
+    .page-map {
+        display: flex;
+        flex-direction: column;
+        //background-color: #284a5f;
+        height: calc(100vh - 40px);
+        overflow: scroll;
+
+        .page {
+            color: white;
+            //border: 1px solid white;
+            margin: 10px;
+            padding:30px;
+
+
+        }
+        
+    }
+
+    @media(min-width: 680px){
+        .page-map {
+            //display: flex;
+            //overflow: scroll;
+            //width: calc(100vh - 50px);
+            width: 100vh;
+            position:absolute;
+            display:block;
+            top: 100vh;
+            //left: 150px;
+            height: 100vw;
+    
+            overflow-y:auto;
+            overflow-x:hidden;
+            transform: rotate(-90deg);
+            transform-origin: left top;
+    
     
             .page {
-                color: white;
-                border: 1px solid white;
-                margin: 10px;
-
-                // transform-origin: center center;
-                // transform: scale(1);
-                // transition: transform 0.5s;
-
-
+                transform:rotate(90deg);
+                //overflow: scroll; DONT DELETE
+                height: 100vh;
+                margin: 30px;
+                padding: 15px;
+    
+                //transform-origin: left top;
+    
             }
             
         }
         .page-map::-webkit-scrollbar {
-            height: 2px;
+            width: 4px;
         }
         .page-map::-webkit-scrollbar-thumb {
             background: #ffffff3d;
         }
-        .page-map::-webkit-scrollbar-track {
-            background: #ffffff12;
-        }
-    
     }
     
+
 }
+
+
 
