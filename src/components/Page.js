@@ -2,6 +2,7 @@ import React from 'react';
 import './ArticleStyles.css';
 import ReactDOM from 'react-dom';
 //import axios from 'axios';
+import LandingPage from '../pages/LandingPage';
 import AboutPage from '../pages/AboutPage';
 import SkillsPage from '../pages/SkillsPage';
 import WorkPage from '../pages/WorkPage';
@@ -45,7 +46,9 @@ class Page extends React.Component {
 
     renderSwitch(param) {
         switch(param) {
-          case 'about':
+        case 'landing':
+            return <LandingPage />;
+        case 'about':
             return <AboutPage />;
         case 'skills':
             return <SkillsPage />;

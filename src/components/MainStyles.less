@@ -47,7 +47,7 @@ h1, h2, h3 {
         position: relative;
 
         @media(min-width: @tablet-min){
-            width: calc(100vw - 40px);
+            width: calc(100vw - 20px);
         }
         span.title {
             opacity: @lighter;
@@ -139,11 +139,10 @@ h1, h2, h3 {
                 transform:rotate(90deg);
                 //overflow: scroll; DONT DELETE
                 height: 100vh;
-                margin: 30px;
+                margin: 15vw 35px;
                 padding: 15px;
-    
+                scroll-snap-align: center;
                 //transform-origin: left top;
-    
             }
             
         }
