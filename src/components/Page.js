@@ -18,23 +18,25 @@ class Page extends React.Component {
 
     state= { inView : false };
 
-    // getPageInView = () => {
-    //     console.log("get page in view");
-    //     const pos = ReactDOM.findDOMNode(this).getBoundingClientRect();
+    getPageInView = () => {
+        console.log("get page in view");
+        const pos = ReactDOM.findDOMNode(this).getBoundingClientRect();
 
-    //     if (pos.left > 0 && pos.right < window.innerWidth && this.props.name !== 'space'){
-    //         this.setState({ inView: true });
-    //         console.log("Active page:", this.props.name)
-    //     } else {
-    //         this.setState({ inView: false });
-    //     }
+        if (pos.left > 0 && pos.right < window.innerWidth && this.props.name !== 'space'){
+            this.setState({ inView: true });
+            console.log("Active page:", this.props.name)
+        } else {
+            this.setState({ inView: false });
+        }
 
-    // }
+    }
     
     scrollToView = () => {
         ReactDOM.findDOMNode(this).scrollIntoView();
-        console.log(ReactDOM.findDOMNode(this).getBoundingClientRect().left);
+        this.setState({ inView: true });
+        //console.log(ReactDOM.findDOMNode(this).getBoundingClientRect().left);
         // this.getPageInView();   
+        console.log("scroll to view:", this.props.name, this.state);
     }
 
 
@@ -49,32 +51,32 @@ class Page extends React.Component {
 
     renderSwitch(param) {
         switch(param) {
-          case 'about':
-            return <AboutPage />;
-        case 'skills':
-            return <SkillsPage />;
-        case 'work':
-            return <WorkPage />;
-        case 'projects':
-            return <ProjectsPage />;
-        case 'pic1':
-            return <Pic1Page />;
-        case 'pic2':
-            return <Pic2Page />;
-        case 'pic3':
-            return <Pic3Page />;
-        case 'pic4':
-            return <Pic4Page />;
-        default:
-            return 'Page not loaded';
+            case 'about':
+                return <AboutPage scrollToPage={this.scrollToPage}/>;
+            case 'skills':
+                return <SkillsPage scrollToPage={this.scrollToPage}/>;
+            case 'work':
+                return <WorkPage scrollToPage={this.scrollToPage}/>;
+            case 'projects':
+                return <ProjectsPage />;
+            case 'pic1':
+                return <Pic1Page />;
+            case 'pic2':
+                return <Pic2Page />;
+            case 'pic3':
+                return <Pic3Page />;
+            case 'pic4':
+                return <Pic4Page />;
+            default:
+                return 'Page not loaded';
         }
-      }
+    }
 
     //className={"page " + (this.state.inView ? 'active' : '')} <- class to show active page
-
+// scrollToPage={this.scrollToPage}
     render () {
         return (
-            <div onClick={this.scrollToView} className="page "> 
+            <div onClick={this.scrollToView} className={"page page-" + this.props.pageType}> 
                 {this.renderSwitch(this.props.name)}
             </div>
         )

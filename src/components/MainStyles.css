@@ -91,16 +91,26 @@ h3 {
   }
 }
 .frame .page-map-wrapper .page-map .page {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   flex-shrink: 0;
-  width: 100%;
+  width: 95%;
   height: 100vh;
   color: #ffffff;
   position: relative;
   overflow-y: scroll;
+  cursor: pointer;
+}
+.frame .page-map-wrapper .page-map .page.page-text {
+  width: 90%;
+  z-index: 1;
+}
+@media (min-width: 480px) {
+  .frame .page-map-wrapper .page-map .page.page-text {
+    width: 80%;
+  }
 }
 .frame .page-map-wrapper .page-map::-webkit-scrollbar {
-  height: 3px;
+  height: 5px;
 }
 .frame .page-map-wrapper .page-map::-webkit-scrollbar-thumb {
   background: #ffffff3d;

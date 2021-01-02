@@ -1,6 +1,5 @@
 .page {
   transition: 0.5s;
-  cursor: pointer;
 }
 .page.active,
 .page:hover {
@@ -55,7 +54,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0px 0px 14px 4px #00000059;
 }
 .page .imagePage.pic1 {
   background-image: url("../assets/photos/DSC_0421.jpg");

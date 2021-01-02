@@ -7,6 +7,7 @@
 @primary-col: #003135;
 @secondary-col: #249c92;
 
+
 html{
     height: 100%,
 }
@@ -28,7 +29,7 @@ body {
     display: flex;
     margin: 0;
 
-    font-family: @font-body;
+    font-family: @font-body;	
 }
 
 h1, h2, h3 {
@@ -116,19 +117,35 @@ h1, h2, h3 {
             }
     
             .page {
-                scroll-snap-align: center;
+                scroll-snap-align: start;
                 flex-shrink: 0;
-                width: 100%;
+                width: 95%;
                 height: 100vh;
                 color: #ffffff;
                 position: relative;
                 overflow-y: scroll;
+                cursor: pointer;
 
+                &.page-text{
+                    width: 90%;
+                    z-index:1;
+
+                    @media(min-width: @tablet-min){
+                        width: 80%;
+    
+                    }
+                }
+
+                &:hover{
+                    //margin-left: -10px;
+                }
+
+                
             }
             
         }
         .page-map::-webkit-scrollbar {
-            height: 3px;
+            height: 5px;
         }
         .page-map::-webkit-scrollbar-thumb {
             background: #ffffff3d;
