@@ -4,7 +4,7 @@ class SkillsPage extends React.Component {
 
     render () {
         return (
-            <div className="skills">
+            <div className="article skills">
                 <h1>Skills</h1>
 
                 <h2>Technologies and programming languages</h2>

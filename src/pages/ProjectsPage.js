@@ -4,7 +4,7 @@ class ProjectsPage extends React.Component {
 
     render () {
         return (
-            <div className="projects">
+            <div className="article projects">
                 <h1>Projects and Examples of my work</h1>
                  <h2>Development</h2>
 

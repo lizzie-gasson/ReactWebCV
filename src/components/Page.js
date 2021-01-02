@@ -6,6 +6,10 @@ import AboutPage from '../pages/AboutPage';
 import SkillsPage from '../pages/SkillsPage';
 import WorkPage from '../pages/WorkPage';
 import ProjectsPage from '../pages/ProjectsPage';
+import Pic1Page from '../pages/Pic1Page';
+import Pic2Page from '../pages/Pic2Page';
+import Pic3Page from '../pages/Pic3Page';
+import Pic4Page from '../pages/Pic4Page';
 
 
 
@@ -53,8 +57,14 @@ class Page extends React.Component {
             return <WorkPage />;
         case 'projects':
             return <ProjectsPage />;
-        case 'space':
-            return '';
+        case 'pic1':
+            return <Pic1Page />;
+        case 'pic2':
+            return <Pic2Page />;
+        case 'pic3':
+            return <Pic3Page />;
+        case 'pic4':
+            return <Pic4Page />;
         default:
             return 'Page not loaded';
         }

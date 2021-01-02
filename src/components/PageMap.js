@@ -7,11 +7,14 @@ class PageMap extends React.Component {
         return (
             <div className="page-map-wrapper">
                 <div className="page-map">
-                    <Page id="0" name="about"/>
-                    <Page id="1" name="skills" />
-                    <Page id="2" name="work"/>
-                    <Page id="3" name="projects" />
-                    <Page id="4" name="space" />
+                    <Page name="about"/>
+                    <Page name="pic1"/>
+                    <Page name="skills" />
+                    <Page name="pic2"/>
+                    <Page name="work"/>
+                    <Page name="pic3"/>
+                    <Page name="projects" />
+                    <Page name="pic4"/>
                 </div>
             </div>
             

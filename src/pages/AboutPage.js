@@ -4,7 +4,7 @@ class AboutPage extends React.Component {
 
     render () {
         return (
-            <div className="about">
+            <div className="article about">
                 <h1>About Me</h1>
                 <p>I am currently working as a full stack developer for IAG, I have a particular passion for front end development and making a user's online experience as simple, efficient and enjoyable as possible. I finished studying computer science at the University of Auckland in 2018, and since then I have been working with IAG where I have gained lots of experience working on web portals, being part of a scrum team, and also learning more about the insurance industry. I am always keen to learn something new, and I strive to find the best and most efficient ways of doing things, both at work and in my personal life.
                 </p>
