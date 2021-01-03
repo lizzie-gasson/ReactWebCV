@@ -38,21 +38,9 @@ class WorkPage extends React.Component {
                 </div>
                 
                 <div className="work-element">
-                    <h2>Christmas Sales assistant - Stonz Jewellers</h2>
-                    <h3>Nov 2015 – Dec 2015</h3>
-                    <p>I worked as a Christmas sales assistant at Stonz Jewellers in the summer after my last year of highschool. During my time at Stonz I improved my communication and customer service skills a lot as it was my first retail job. I had to learn a lot of information about the product very quickly to be able to sell effectively.</p>
-                </div>
-
-                <div className="work-element">
                     <h2>Photographer - KJA Photography</h2>
                     <h3>2014 – 2017</h3>
                     <p>New Zealand Fashion Week. At smaller events I would go by myself to take the photos, at events like balls I worked in a team of two or three. Most of the jobs were for events, but I also did a few other interesting things like interior design.</p>
-                </div>
-                
-                <div className="work-element">
-                    <h2>Stallholder - Clevedon Farmers Market</h2>
-                    <h3>2013 – Ongoing</h3>
-                    <p>Over the years I have helped sell mandarins and avocados at the local farmers market with my family. We grow them at our family home, so I would sometimes help with the picking of fruit and separating them into bags, other times just helping on the day to sell at the stall.</p>
                 </div>
             </div>
         )

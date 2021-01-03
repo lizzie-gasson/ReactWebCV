@@ -109,7 +109,7 @@ h3 {
 }
 .frame .page-map-wrapper .page-map .page.page-text {
   width: 90%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 @media (min-width: 480px) {
   .frame .page-map-wrapper .page-map .page.page-text {

@@ -78,7 +78,7 @@ class Page extends React.Component {
 // scrollToPage={this.scrollToPage}
     render () {
         return (
-            <div onClick={this.scrollToView} className={(this.state.inView ? 'active ' : '') + "page page-" + this.props.pageType}> 
+            <div onClick={this.scrollToView} className={(this.state.inView ? 'active ' : '') + "page page-" + this.props.pageType + " " + this.props.name}> 
                 {this.renderSwitch(this.props.name)}
             </div>
         )

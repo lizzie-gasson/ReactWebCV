@@ -21,6 +21,18 @@
   text-decoration: none;
   color: #249c92;
 }
+.page.about {
+  background-color: #76aac0;
+}
+.page.skills {
+  background-color: #430028;
+}
+.page.work {
+  background-color: #ff5f60;
+}
+.page.projects {
+  background-color: #2c5f5d;
+}
 .page iframe {
   height: 400px;
   width: 100%;
