@@ -138,7 +138,6 @@ h3 {
   height: 80vh;
   line-height: 80vh;
   top: 60px;
-  content: ">";
   transition: 0.3s;
   opacity: 0.5;
 }
