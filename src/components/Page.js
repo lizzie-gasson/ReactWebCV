@@ -1,6 +1,7 @@
 import React from 'react';
 import './ArticleStyles.css';
 import ReactDOM from 'react-dom';
+import $ from 'jquery';
 //import axios from 'axios';
 import AboutPage from '../pages/AboutPage';
 import SkillsPage from '../pages/SkillsPage';
@@ -18,13 +19,16 @@ class Page extends React.Component {
 
     state= { inView : false };
 
-    getPageInView = () => {
-        console.log("get page in view");
+    constructor(){
+        super();
+    }
+
+    setPageInView = () => {
         const pos = ReactDOM.findDOMNode(this).getBoundingClientRect();
 
-        if (pos.left > 0 && pos.right < window.innerWidth && this.props.name !== 'space'){
+        if (pos.left == 0) {
             this.setState({ inView: true });
-            console.log("Active page:", this.props.name)
+            window.pageComponent.active = this;
         } else {
             this.setState({ inView: false });
         }
@@ -33,30 +37,28 @@ class Page extends React.Component {
     
     scrollToView = () => {
         ReactDOM.findDOMNode(this).scrollIntoView();
-        this.setState({ inView: true });
-        //console.log(ReactDOM.findDOMNode(this).getBoundingClientRect().left);
-        // this.getPageInView();   
-        console.log("scroll to view:", this.props.name, this.state);
     }
 
 
     componentDidMount() {
-        document.addEventListener('click', this.getPageInView);
+        window.pageComponent[this.props.index] = this;
 
-        // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-        const vh = window.innerHeight * 0.01;
-        // Then we set the value in the --vh custom property to the root of the document
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        var thisPage = this;
+        thisPage.setPageInView();
+  
+        $('.page-map').on('scroll', function() {
+            thisPage.setPageInView();
+        });
     }
 
     renderSwitch(param) {
         switch(param) {
             case 'about':
-                return <AboutPage scrollToPage={this.scrollToPage}/>;
+                return <AboutPage />;
             case 'skills':
-                return <SkillsPage scrollToPage={this.scrollToPage}/>;
+                return <SkillsPage />;
             case 'work':
-                return <WorkPage scrollToPage={this.scrollToPage}/>;
+                return <WorkPage />;
             case 'projects':
                 return <ProjectsPage />;
             case 'pic1':
@@ -76,7 +78,7 @@ class Page extends React.Component {
 // scrollToPage={this.scrollToPage}
     render () {
         return (
-            <div onClick={this.scrollToView} className={"page page-" + this.props.pageType}> 
+            <div onClick={this.scrollToView} className={(this.state.inView ? 'active ' : '') + "page page-" + this.props.pageType}> 
                 {this.renderSwitch(this.props.name)}
             </div>
         )
