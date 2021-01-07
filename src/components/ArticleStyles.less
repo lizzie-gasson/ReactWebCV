@@ -131,11 +131,13 @@
         background-size: cover;
         width: 100%;
         height: 100%;
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         //box-shadow: inset 0px 0px 14px 4px #00000059;
+        @media (min-width: @tablet-min){
+            background-attachment: fixed;
+        }
 
         &.pic1{
             background-image: url(".././assets/photos/DSC_0421.jpg"); 
