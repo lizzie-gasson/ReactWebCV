@@ -1,6 +1,5 @@
 .page {
   transition: 0.5s;
-  cursor: pointer;
 }
 .page.active,
 .page:hover {
@@ -22,13 +21,57 @@
   text-decoration: none;
   color: #249c92;
 }
+.page.landing {
+  background-color: #0c3c48;
+}
+.page.landing .article .landing-text-wrapper {
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.page.landing .article .landing-text-wrapper .picture {
+  width: 165px;
+  height: 180px;
+  background-image: url("../assets/photos/IMG_2755.JPG");
+  background-size: cover;
+  background-position: 50% 25%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px #00000042;
+  margin: auto;
+  flex-shrink: 0;
+}
+.page.landing .article .landing-text-wrapper .landing-text p {
+  text-align: center;
+  margin-top: 30px;
+}
+.page.about {
+  background-color: #76aac0;
+}
+.page.skills {
+  background-color: #440166;
+}
+.page.work {
+  background-color: #ff5f60;
+}
+.page.projects {
+  background-color: #16271c;
+}
 .page iframe {
   height: 400px;
-  width: 90%;
+  width: 100%;
   border: none;
   border-radius: 5px;
-  margin: 5%;
   box-shadow: 5px 5px 12px 0px #00000040;
+  background-color: #fff;
+}
+.page .article {
+  padding: 10px 20px;
+  margin: 30px auto 0;
+}
+@media (min-width: 680px) {
+  .page .article {
+    padding: 60px 100px;
+    max-width: 1100px;
+  }
 }
 .page .text-group {
   margin-bottom: 50px;
@@ -36,4 +79,24 @@
 .page .work .work-element {
   text-align: left;
   margin-bottom: 50px;
+}
+.page .imagePage {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page .imagePage.pic1 {
+  background-image: url("../assets/photos/DSC_0421.jpg");
+}
+.page .imagePage.pic2 {
+  background-image: url("../assets/photos/DSC_0728.jpg");
+}
+.page .imagePage.pic3 {
+  background-image: url("../assets/photos/DSC_0752.JPG");
+}
+.page .imagePage.pic4 {
+  background-image: url("../assets/photos/DSC_0286.JPG");
 }

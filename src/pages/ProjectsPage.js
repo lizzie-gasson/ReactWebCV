@@ -4,7 +4,7 @@ class ProjectsPage extends React.Component {
 
     render () {
         return (
-            <div className="projects">
+            <div className="article projects">
                 <h1>Projects and Examples of my work</h1>
                  <h2>Development</h2>
 
@@ -13,9 +13,9 @@ class ProjectsPage extends React.Component {
                     <iframe className="iframe-zoomed" src="https://reactpics-73174.web.app/"></iframe>
                  </div>
                  <p>Check out <a target="_blank" rel="noopener noreferrer"  href="https://lizzie-website.web.app/">my previous website</a> that I made after graduating from University.</p>
-                 <div className="iframe-wrap">
+                 {/* <div className="iframe-wrap">
                     <iframe className="iframe-zoomed" src="https://lizzie-website.web.app/"></iframe>
-                 </div>
+                 </div> */}
                  
       
                 <h2>Photography and film</h2>

@@ -1,11 +1,16 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Header extends React.Component {
+
+    goHome = () => {
+        ReactDOM.findDOMNode(window.pageComponent[0]).scrollIntoView();
+    }
 
     render () {
         return (
             <div className="header">
-                <span className="title">Lizzie Gasson</span>
+                <span onClick={this.goHome} className="title">Lizzie Gasson</span>
 
                 <div className="contact-links">
                     <a target="_blank" rel="noopener noreferrer" className="link email" href="mailto:lizzie.gasson@gmail.com"></a>

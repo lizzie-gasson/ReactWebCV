@@ -1,4 +1,4 @@
-@tablet-min: 480px;
+@tablet-min: 680px;
 @desktop-min: 1200px;
 @lighter: .5;
 @font-title: 'Abril Fatface', cursive;
@@ -10,7 +10,6 @@
 .page{
 
     transition: 0.5s;
-    cursor: pointer;
     //opacity: 0.4;
 
     &.active, &:hover {
@@ -35,14 +34,85 @@
         text-decoration: none;
         color: @secondary-col;
     }
+
+
+
+    &.landing{
+        background-color: #0c3c48;
+
+        .article{
+            //max-width: 650px;
+
+            .landing-text-wrapper{
+                //display: flex;
+                flex-wrap: wrap;
+                margin-top: 80px;
+    
+                .picture{
+                    width: 165px;
+                    height: 180px;
+                    background-image: url(".././assets/photos/IMG_2755.JPG"); 
+                    background-size: cover;
+                    background-position: 50% 25%;
+                    border-radius: 5px;
+                    box-shadow: 0 0 6px 2px #00000042;
+                    margin: auto;
+                    flex-shrink: 0;
+                }
+    
+      
+              
+                .landing-text{
+                    p{
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                }
+           
+                
+            }
+        }
+
+        
+        
+    }
+
+    &.about{
+        background-color: #76aac0;
+    }
+
+    &.skills{
+        background-color: #440166;
+        
+    }
+
+    &.work{
+        background-color: #ff5f60;
+        
+    }
+
+    &.projects{
+        background-color: #16271c;
+        
+    }
     
     iframe{
         height: 400px;
-        width: 90%;
+        width: 100%;
         border: none;
         border-radius: 5px;
-        margin: 5%;
         box-shadow: @box-shadow;
+        background-color: #fff;
+    }
+
+    .article{
+        padding: 10px 20px;
+        margin: 30px auto 0;
+
+        @media(min-width: @tablet-min){
+            padding: 60px 100px;
+            max-width: 1100px;
+        }
     }
 
     .text-group{
@@ -56,5 +126,31 @@
             margin-bottom: 50px;
         }
     }
+
+    .imagePage{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //box-shadow: inset 0px 0px 14px 4px #00000059;
+
+        &.pic1{
+            background-image: url(".././assets/photos/DSC_0421.jpg"); 
+        }
+        &.pic2{
+            background-image: url(".././assets/photos/DSC_0728.jpg"); 
+        }
+        &.pic3{
+            background-image: url(".././assets/photos/DSC_0752.JPG"); 
+        }
+        &.pic4{
+            background-image: url(".././assets/photos/DSC_0286.JPG"); 
+        }
+    }
+    
+
 
 }
