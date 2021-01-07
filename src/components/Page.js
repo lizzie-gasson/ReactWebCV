@@ -3,6 +3,7 @@ import './ArticleStyles.css';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 //import axios from 'axios';
+import LandingPage from '../pages/LandingPage';
 import AboutPage from '../pages/AboutPage';
 import SkillsPage from '../pages/SkillsPage';
 import WorkPage from '../pages/WorkPage';
@@ -26,7 +27,7 @@ class Page extends React.Component {
     setPageInView = () => {
         const pos = ReactDOM.findDOMNode(this).getBoundingClientRect();
 
-        if (pos.left == 0) {
+        if (pos.left == 0 || (pos.left < 1 && pos.left > -1)) {
             this.setState({ inView: true });
             window.pageComponent.active = this;
         } else {
@@ -53,6 +54,8 @@ class Page extends React.Component {
 
     renderSwitch(param) {
         switch(param) {
+            case 'landing':
+                return <LandingPage />;
             case 'about':
                 return <AboutPage />;
             case 'skills':
@@ -75,10 +78,10 @@ class Page extends React.Component {
     }
 
     //className={"page " + (this.state.inView ? 'active' : '')} <- class to show active page
-// scrollToPage={this.scrollToPage}
+// scrollToPage={this.scrollToPage} onClick={this.scrollToView}
     render () {
         return (
-            <div onClick={this.scrollToView} className={(this.state.inView ? 'active ' : '') + "page page-" + this.props.pageType + " " + this.props.name}> 
+            <div className={(this.state.inView ? 'active ' : '') + "page page-" + this.props.pageType + " " + this.props.name}> 
                 {this.renderSwitch(this.props.name)}
             </div>
         )

@@ -21,17 +21,39 @@
   text-decoration: none;
   color: #249c92;
 }
+.page.landing {
+  background-color: #0c3c48;
+}
+.page.landing .article .landing-text-wrapper {
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.page.landing .article .landing-text-wrapper .picture {
+  width: 165px;
+  height: 180px;
+  background-image: url("../assets/photos/IMG_2755.JPG");
+  background-size: cover;
+  background-position: 50% 25%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 2px #00000042;
+  margin: auto;
+  flex-shrink: 0;
+}
+.page.landing .article .landing-text-wrapper .landing-text p {
+  text-align: center;
+  margin-top: 30px;
+}
 .page.about {
   background-color: #76aac0;
 }
 .page.skills {
-  background-color: #430028;
+  background-color: #440166;
 }
 .page.work {
   background-color: #ff5f60;
 }
 .page.projects {
-  background-color: #2c5f5d;
+  background-color: #16271c;
 }
 .page iframe {
   height: 400px;
@@ -76,5 +98,5 @@
   background-image: url("../assets/photos/DSC_0752.JPG");
 }
 .page .imagePage.pic4 {
-  background-image: url("../assets/photos/DSC_0356.JPG");
+  background-image: url("../assets/photos/DSC_0286.JPG");
 }

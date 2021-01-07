@@ -5,32 +5,40 @@ import $ from 'jquery';
 
 class PageMap extends React.Component {
 
-    scrollToPage = () => {
-        console.log('scroll to page called');
-        ReactDOM.findDOMNode(this).scrollIntoView();
-    }
     constructor(){
         super();
         window.pageComponent = [];
-        console.log(window);
     }
 
     componentDidMount() {
-        
+
+        $('.nav-left').addClass('hide-nav');
+
+        $('.page-map').on('scroll', function() {
+            if (this.scrollLeft == 0){
+                $('.nav-left').addClass('hide-nav');
+            } else if (this.scrollLeft + this.offsetWidth >= this.scrollWidth - 100) {
+                $('.nav-right').addClass('hide-nav');
+            } else {
+                $('.nav-right, .nav-left').removeClass('hide-nav');
+            }
+
+        });
     }
 
     render () {
         return (
             <div className="page-map-wrapper">
                 <div className="page-map">
-                    <Page pageType="text" name="about" index="0"/>
-                    <Page pageType="image" name="pic1" index="1"/>
-                    <Page pageType="text" name="skills" index="2"/>
-                    <Page pageType="image" name="pic2" index="3"/>
-                    <Page pageType="text" name="work" index="4"/>
-                    <Page pageType="image" name="pic3" index="5"/>
-                    <Page pageType="text" name="projects" index="6" />
-                    <Page pageType="image" name="pic4" index="7"/>
+                    <Page pageType="landing" name="landing" index="0"/>
+                    <Page pageType="text" name="about" index="1"/>
+                    <Page pageType="image" name="pic1" index="2"/>
+                    <Page pageType="text" name="skills" index="3"/>
+                    <Page pageType="image" name="pic2" index="4"/>
+                    <Page pageType="text" name="work" index="5"/>
+                    <Page pageType="image" name="pic3" index="6"/>
+                    <Page pageType="text" name="projects" index="7" />
+                    <Page pageType="image" name="pic4" index="8"/>
                 </div>
             </div>
             

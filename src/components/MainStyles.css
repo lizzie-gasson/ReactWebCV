@@ -20,6 +20,11 @@ h2,
 h3 {
   font-family: 'Abril Fatface', cursive;
 }
+@media (max-width: 679px) {
+  .lge-only {
+    display: none;
+  }
+}
 .frame {
   background: #003135;
 }
@@ -33,7 +38,7 @@ h3 {
   z-index: 1;
   width: 100%;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .frame .header {
     padding: 20px 20px 0 20px;
   }
@@ -91,7 +96,7 @@ h3 {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .frame .page-map-wrapper .page-map {
     padding: 0;
   }
@@ -111,7 +116,7 @@ h3 {
   width: 90%;
   max-width: 900px;
 }
-@media (min-width: 480px) {
+@media (min-width: 680px) {
   .frame .page-map-wrapper .page-map .page.page-text {
     width: 80%;
   }
@@ -125,36 +130,58 @@ h3 {
 .frame .page-map-wrapper .page-map::-webkit-scrollbar-track {
   background: #ffffff12;
 }
-.frame .navigation {
-  cursor: pointer;
-  color: #fff;
-  text-align: center;
-  font-size: 30px;
+@media (min-width: 680px) {
+  .frame .navigation {
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+  }
+  .frame .navigation .nav-left,
+  .frame .navigation .nav-right {
+    position: absolute;
+    width: 75px;
+    height: 80vh;
+    line-height: 80vh;
+    top: 60px;
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+  .frame .navigation .nav-left:hover,
+  .frame .navigation .nav-right:hover {
+    opacity: 1;
+  }
+  .frame .navigation .nav-left {
+    left: 0;
+  }
+  .frame .navigation .nav-left:hover {
+    transform: translate(-10px);
+  }
+  .frame .navigation .nav-left.hide-nav {
+    transform: translate(-100px);
+  }
+  .frame .navigation .nav-right {
+    right: 0;
+  }
+  .frame .navigation .nav-right:hover {
+    transform: translate(10px);
+  }
+  .frame .navigation .nav-right.hide-nav {
+    transform: translate(100px);
+  }
 }
-.frame .navigation .nav-left,
-.frame .navigation .nav-right {
+.frame .back-to-start {
   position: absolute;
-  width: 75px;
-  height: 80vh;
-  line-height: 80vh;
-  top: 60px;
+  right: 20px;
+  font-size: 18px;
   transition: 0.3s;
+  top: calc(50vh - 30px);
   opacity: 0.5;
 }
-.frame .navigation .nav-left:hover,
-.frame .navigation .nav-right:hover {
+.frame .back-to-start a {
+  color: #fff;
+}
+.frame .back-to-start:hover {
+  transform: translate(-20px);
   opacity: 1;
-}
-.frame .navigation .nav-left {
-  left: 0;
-}
-.frame .navigation .nav-right {
-  right: 0;
-}
-.frame .navigation .nav-bottom {
-  height: 30px;
-  position: absolute;
-  width: 100vw;
-  bottom: 0;
-  background-color: rgba(202, 123, 255, 0.507);
 }

@@ -1,5 +1,7 @@
 //#517f8b <-so pretty
-@tablet-min: 480px;
+//#6405d0
+@tablet-min: 680px;
+@mobile-max: 679px;
 @desktop-min: 1200px;
 @lighter: .5;
 @font-title: 'Abril Fatface', cursive;
@@ -36,6 +38,12 @@ h1, h2, h3 {
     font-family: @font-title;
     // position: sticky;
     // top: 0;
+}
+
+.lge-only{
+    @media(max-width: @mobile-max){
+        display: none;
+    }
 }
 
 .frame{
@@ -170,38 +178,63 @@ h1, h2, h3 {
     }
     
     .navigation{
-        cursor: pointer;
-        color: #fff;
-        text-align: center;
-        font-size: 30px;
+        @media(min-width: @tablet-min){
+            cursor: pointer;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+    
+            .nav-left, .nav-right{
+                position: absolute;
+                width: 75px;
+                height: 80vh;
+                line-height: 80vh;
+                top: 60px;
+                transition: .3s;
+                opacity: @lighter;
+    
+                &:hover{
+                    opacity: 1;
+                }
 
-        .nav-left, .nav-right{
-            position: absolute;
-            width: 75px;
-            height: 80vh;
-            line-height: 80vh;
-            top: 60px;
-            transition: .3s;
-            opacity: @lighter;
-
-            &:hover{
-                opacity: 1;
+            }
+            .nav-left{
+                left: 0;
+                &:hover{
+                    transform: translate(-10px);
+                }
+                &.hide-nav{
+                    transform: translate(-100px);
+                }
+            }
+            .nav-right{
+                right: 0;
+                &:hover{
+                    transform: translate(10px);
+                }
+                &.hide-nav{
+                    transform: translate(100px);
+                }
             }
         }
-        .nav-left{
-            left: 0;
-        }
-        .nav-right{
-            right: 0;
-        }
-        .nav-bottom{
-            height: 30px;
-            position: absolute;
-            width: 100vw;
-            bottom: 0;
-            background-color: rgba(202, 123, 255, 0.507);
-        }
         
+        
+    }
+
+    .back-to-start{
+        position: absolute;
+        right: 20px;
+        font-size: 18px;
+        transition: .3s;
+        top: calc(50vh - 30px);
+        opacity: @lighter;
+        a {
+            color: #fff;
+        }
+        &:hover{
+            transform: translate(-20px);
+            opacity: 1;
+        }
     }
 
 }
