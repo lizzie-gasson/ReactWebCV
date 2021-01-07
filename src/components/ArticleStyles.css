@@ -83,10 +83,14 @@
 .page .imagePage {
   width: 100%;
   height: 100%;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 680px) {
+  .page .imagePage {
+    background-attachment: fixed;
+  }
 }
 .page .imagePage.pic1 {
   background-image: url("../assets/photos/DSC_0421.jpg");
