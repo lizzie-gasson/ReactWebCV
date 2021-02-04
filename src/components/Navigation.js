@@ -24,7 +24,7 @@ class Navigation extends React.Component {
 
     goToPage(page) {
         var i = window.pageComponent[page].props.index;
-        ReactDOM.findDOMNode(window.pageComponent[i]).scrollIntoView();
+        ReactDOM.findDOMNode(window.pageComponent[i]).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
     }
 
     hoverLeft(e) {
@@ -43,14 +43,14 @@ class Navigation extends React.Component {
             <div className="navigation">
                 <div 
                     onClick={this.prevPage} 
-                    onMouseEnter={() => $('.page.active').addClass("hoverLeft")}
-                    onMouseLeave={() => $('.page.active').removeClass("hoverLeft")}
+                    //onMouseEnter={() => $('.page.active').addClass("hoverLeft")}
+                    //onMouseLeave={() => $('.page.active').removeClass("hoverLeft")}
                     className="nav-left hide"
                 ><i className="fas fa-arrow-alt-circle-left"></i></div>
                 <div 
                     onClick={this.nextPage} 
-                    onMouseEnter={() => $('.page.active').addClass("hoverRight")}
-                    onMouseLeave={() => $('.page.active').removeClass("hoverRight")}
+                    // onMouseEnter={() => $('.page.active').addClass("hoverRight")}
+                    // onMouseLeave={() => $('.page.active').removeClass("hoverRight")}
                     className="nav-right landing-nav"
                 ><i className="fas fa-arrow-alt-circle-right"></i></div>
                 
