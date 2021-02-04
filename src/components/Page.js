@@ -20,13 +20,11 @@ class Page extends React.Component {
 
     state= { inView : false };
 
-    constructor(){
-        super();
-    }
+
 
     setPageInView = () => {
         const pos = ReactDOM.findDOMNode(this).getBoundingClientRect();
-
+ 
         if (pos.left == 0 || (pos.left < 1 && pos.left > -1)) {
             this.setState({ inView: true });
             window.pageComponent.active = this;
