@@ -10,7 +10,8 @@ class WorkPage extends React.Component {
                 <div className="work-element">
                     <h2>Developer - IAG</h2>
                     <h3>July 2018 - Now</h3>
-                    <p>I started working at IAG as a grad during my final semester of study. The team was really friendly and supportive as I learned about the technologies and processes that they use. I work on the quote and buy portals now, primarily doing front end work but as a team we all work on the different areas including the back end, analytics and databases. I have learned a lot about IAG as a business, the insurance industry, and also the agile methodology.</p>
+                    <p>I started working at IAG as a graduate during my final semester of study. I work on the quote and buy portals now, primarily doing front end work but as a team we all work on different areas including the back end, analytics and databases. While my scrum team worked on the Home and Contents websites during the year of 2020, sales increased by 72%, with an increase in conversion rate of 100% for the State house site, and an increase in conversion rate of 200% for the AMI house site. Throughout my time working at IAG I have done a re-skin on each of the 4 projects that my team worked on (home, contents and car for both the AMI and State brands). We also work with analytics systems such as Tealeaf, VWO, and Grafana.</p><p>
+At IAG I was part of the social club during 2019 where we planned events and activities for the digital team. I also worked with new graduates and starters helping them get up to speed.</p>
                 </div>
                 
                 <div className="work-element">
@@ -22,7 +23,8 @@ class WorkPage extends React.Component {
                 <div className="work-element">
                     <h2>Content creator - Middlemore Foundation</h2>
                     <h3>Feb 2019</h3>
-                    <p>I worked with the Middlemore foundation creating video content to be used in social media.</p>
+                    <p>I worked with the Middlemore foundation creating video content to be used in social media. I worked with a colleague to create a set of videos that told the story of a girl that had to go through years of hospital treatment.</p>
+                    
                 </div>
                 
                 <div className="work-element">
