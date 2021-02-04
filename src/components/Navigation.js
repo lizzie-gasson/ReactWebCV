@@ -51,7 +51,7 @@ class Navigation extends React.Component {
                     onClick={this.nextPage} 
                     onMouseEnter={() => $('.page.active').addClass("hoverRight")}
                     onMouseLeave={() => $('.page.active').removeClass("hoverRight")}
-                    className="nav-right"
+                    className="nav-right landing-nav"
                 ><i className="fas fa-arrow-alt-circle-right"></i></div>
                 
             </div>

@@ -17,10 +17,12 @@ class PageMap extends React.Component {
         $('.page-map').on('scroll', function() {
             if (this.scrollLeft == 0){
                 $('.nav-left').addClass('hide-nav');
+                $('.nav-right').addClass('landing-nav');
             } else if (this.scrollLeft + this.offsetWidth >= this.scrollWidth - 100) {
                 $('.nav-right').addClass('hide-nav');
             } else {
                 $('.nav-right, .nav-left').removeClass('hide-nav');
+                $('.nav-right').removeClass('landing-nav');
             }
 
         });
