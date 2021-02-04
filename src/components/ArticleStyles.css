@@ -22,24 +22,35 @@
   color: #249c92;
 }
 .page.landing {
-  background-color: #0c3c48;
-}
-.page.landing .article .landing-text-wrapper {
-  flex-wrap: wrap;
-  margin-top: 80px;
-}
-.page.landing .article .landing-text-wrapper .picture {
-  width: 165px;
-  height: 180px;
-  background-image: url("../assets/photos/IMG_2755.JPG");
+  background: url("../assets/photos/IMG_4256.JPG");
   background-size: cover;
-  background-position: 50% 25%;
-  border-radius: 5px;
-  box-shadow: 0 0 6px 2px #00000042;
-  margin: auto;
-  flex-shrink: 0;
+  background-position: 35%;
 }
-.page.landing .article .landing-text-wrapper .landing-text p {
+@media (min-width: 680px) {
+  .page.landing {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 679px) {
+  .page.landing .article {
+    padding: 10px 20px 20px;
+    background-image: linear-gradient(#ff000000, #000000ab);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 65px 20px;
+  }
+}
+@media (min-width: 680px) {
+  .page.landing .article {
+    max-width: 320px;
+    margin: 50px 30px;
+    padding: 30px;
+    background: none;
+    bottom: unset;
+  }
+}
+.page.landing .article .landing-text p {
   text-align: center;
   margin-top: 30px;
 }
@@ -100,7 +111,9 @@
 }
 .page .imagePage.pic3 {
   background-image: url("../assets/photos/DSC_0752.JPG");
+  background-position: left;
 }
 .page .imagePage.pic4 {
   background-image: url("../assets/photos/DSC_0286.JPG");
+  background-position: 30%;
 }
