@@ -48,6 +48,7 @@
     padding: 30px;
     background: none;
     bottom: unset;
+    font-size: 20px;
   }
 }
 .page.landing .article .landing-text p {
@@ -108,6 +109,7 @@
 }
 .page .imagePage.pic2 {
   background-image: url("../assets/photos/DSC_0728.jpg");
+  background-position: 75%;
 }
 .page .imagePage.pic3 {
   background-image: url("../assets/photos/DSC_0752.JPG");
