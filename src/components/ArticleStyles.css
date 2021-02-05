@@ -24,7 +24,7 @@
 .page.landing {
   background: url("../assets/photos/IMG_4256.JPG");
   background-size: cover;
-  background-position: 35%;
+  background-position: 35% 20%;
 }
 @media (min-width: 680px) {
   .page.landing {
@@ -109,7 +109,7 @@
 }
 .page .imagePage.pic2 {
   background-image: url("../assets/photos/DSC_0728.jpg");
-  background-position: 75%;
+  background-position: 75% 30%;
 }
 .page .imagePage.pic3 {
   background-image: url("../assets/photos/DSC_0752.JPG");
