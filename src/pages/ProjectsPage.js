@@ -6,17 +6,18 @@ class ProjectsPage extends React.Component {
         return (
             <div className="article projects">
                 <h1>Projects and Examples of my work</h1>
-                 <h2>Development</h2>
+                 {/* <h2>Development</h2>
 
                 <p>Here is one of my projects learning react and working with APIs. Based on a project from the course <a  target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/react-redux/">Modern React with Redux</a>. I'm planning to use this as a base to experiment with more APIs and create something fun. Try searching something!</p>
                  <div className="iframe-wrap">
                     <iframe className="iframe-zoomed" src="https://reactpics-73174.web.app/"></iframe>
-                 </div>
+                 </div> */}
+
+                 
                  {/* <div className="iframe-wrap">
                     <iframe className="iframe-zoomed" src="https://lizzie-website.web.app/"></iframe>
                  </div> */}
                  
-      
                 <h2>Photography and film</h2>
                 <ul>
                     <li>
