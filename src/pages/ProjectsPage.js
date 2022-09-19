@@ -18,16 +18,22 @@ class ProjectsPage extends React.Component {
                 <h3>Conjugation app (in progress)</h3>
                 <p>I'm working on a small application using React Native, Typescript and Expo. It helps users learn how to conjugate verbs in Spanish and French.</p>
                 <p>Use the QR code below to try it on your own device using expo</p>
-                <img src={qrCode} alt="QR code expo" width={250}/>
+                
                 {/* <video src={walkthrough} alt="QR code expo" width={250}/> */}
                 <a href="https://expo.dev/@lizzieg"></a>
-                <div>
+                <div style={{display: 'inline-flex', marginRight: 15}}>
+                    <div style={{width: 250}}>
                     <Player
                         playsInline
                         poster={poster}
                         src={walkthrough}
                     />
+                    </div>
                 </div>
+                <div style={{display: 'inline-flex'}}>
+                    <img src={qrCode} alt="QR code expo" width={250}/>
+                </div>
+                
                
                  
                 <h2>Photography and film</h2>
