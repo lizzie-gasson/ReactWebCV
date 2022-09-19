@@ -12,7 +12,7 @@ class ProjectsPage extends React.Component {
     render () {
         return (
             <div className="article projects">
-                <h1>Projects and Examples of my work</h1>
+                <h1>Projects</h1>
                 <h2>Development</h2>
 
                 <h3>Conjugation app (in progress)</h3>
