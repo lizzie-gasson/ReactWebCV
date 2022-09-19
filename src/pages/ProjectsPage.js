@@ -1,4 +1,11 @@
 import React from 'react';
+import qrCode from '../assets/expo-go.svg'; 
+import walkthrough from '../assets/conju-app-assets/walkthrough.MP4'; 
+import poster from '../assets/conju-app-assets/home-spanish.PNG'; 
+import 'video-react/dist/video-react.css'; // import css
+import { Player } from 'video-react';
+
+// https://video-react.js.org/
 
 class ProjectsPage extends React.Component {
 
@@ -6,30 +13,37 @@ class ProjectsPage extends React.Component {
         return (
             <div className="article projects">
                 <h1>Projects and Examples of my work</h1>
-                 {/* <h2>Development</h2>
+                <h2>Development</h2>
 
-                <p>Here is one of my projects learning react and working with APIs. Based on a project from the course <a  target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/course/react-redux/">Modern React with Redux</a>. I'm planning to use this as a base to experiment with more APIs and create something fun. Try searching something!</p>
-                 <div className="iframe-wrap">
-                    <iframe className="iframe-zoomed" src="https://reactpics-73174.web.app/"></iframe>
-                 </div> */}
-
-                 
-                 {/* <div className="iframe-wrap">
-                    <iframe className="iframe-zoomed" src="https://lizzie-website.web.app/"></iframe>
-                 </div> */}
+                <h3>Conjugation app (in progress)</h3>
+                <p>I'm working on a small application using React Native, Typescript and Expo. It helps users learn how to conjugate verbs in Spanish and French.</p>
+                <p>Use the QR code below to try it on your own device using expo</p>
+                <img src={qrCode} alt="QR code expo" width={250}/>
+                {/* <video src={walkthrough} alt="QR code expo" width={250}/> */}
+                <a href="https://expo.dev/@lizzieg"></a>
+                <div>
+                    <Player
+                        playsInline
+                        poster={poster}
+                        src={walkthrough}
+                    />
+                </div>
+               
                  
                 <h2>Photography and film</h2>
+                
+                <h3>Bianca's story - Middlemore foundation</h3>
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F345363779411831%2F&show_text=false&width=560&t=0" width="560" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F2318327965158874%2F&show_text=false&width=560&t=0" width="560" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F426783814761441%2F&show_text=false&width=560&t=0" width="560"  scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          
+          
+                <h3>Others</h3>
                 <ul>
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="https://fb.watch/25zRdjkqbW/">Daikin video</a>
-                    </li>
-                    <li>
-                        Bianca's story - Middlemore foundation
-                        <ul>
-                            <li><a target="_blank" rel="noopener noreferrer" href="https://fb.watch/25A4IL1d4F/">Part 1</a></li>
-                            <li><a target="_blank" rel="noopener noreferrer" href="https://fb.watch/25Ac6det_v/">Part 2</a></li>
-                            <li><a target="_blank" rel="noopener noreferrer" href="https://fb.watch/25AdKB4ipu/">Part 3</a></li>
-                        </ul>
+                        <a target="_blank" rel="noopener noreferrer" href="https://fb.watch/25zRdjkqbW/">Daikin Healthy Homes video</a>
                     </li>
                     <li>
                         <a target="_blank" rel="noopener noreferrer" href="http://glasstemple.co.nz/">Glass Temple</a> - Check out the home page to see some of my photography!
@@ -42,11 +56,6 @@ class ProjectsPage extends React.Component {
                         </ul>
                     </li>
                 </ul>
-
-                {/* <div className="iframe-wrap">
-                    <iframe className="iframe-zoomed" src="https://denise177.wixsite.com/glasstemplenurseries"></iframe>
-                </div> */}
-                
             </div>
         )
     }

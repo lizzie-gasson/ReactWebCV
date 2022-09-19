@@ -68,12 +68,13 @@
   background-color: #16271c;
 }
 .page iframe {
-  height: 400px;
-  width: 100%;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   box-shadow: 5px 5px 12px 0px #00000040;
-  background-color: #fff;
+  background-color: #000;
 }
 .page .article {
   padding: 10px 20px 80px;

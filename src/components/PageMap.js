@@ -33,14 +33,14 @@ class PageMap extends React.Component {
             <div className="page-map-wrapper">
                 <div className="page-map">
                     <Page pageType="landing" name="landing" index="0"/>
-                    <Page pageType="text" name="about" index="1"/>
-                    <Page pageType="image" name="pic1" index="2"/>
-                    <Page pageType="text" name="skills" index="3"/>
-                    <Page pageType="image" name="pic2" index="4"/>
-                    <Page pageType="text" name="work" index="5"/>
-                    <Page pageType="image" name="pic3" index="6"/>
-                    <Page pageType="text" name="projects" index="7" />
-                    <Page pageType="image" name="pic4" index="8"/>
+                    <Page pageType="text" name="projects" index="1" />
+                    <Page pageType="image" name="pic4" index="2"/>
+                    <Page pageType="text" name="about" index="3"/>
+                    <Page pageType="image" name="pic1" index="4"/>
+                    <Page pageType="text" name="skills" index="5"/>
+                    <Page pageType="image" name="pic2" index="6"/>
+                    <Page pageType="text" name="work" index="7"/>
+                    <Page pageType="image" name="pic3" index="8"/>
                 </div>
             </div>
             

@@ -10,9 +10,11 @@
     "firebase-admin": "^9.4.1",
     "firebase-functions": "^3.11.0",
     "jquery": "^3.5.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "3.4.3",
+    "redux": "^4.2.0",
+    "video-react": "^0.15.0"
   },
   "scripts": {
     "start": "react-scripts start",
