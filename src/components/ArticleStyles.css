@@ -65,16 +65,28 @@
   background-color: #ff5f60;
 }
 .page.projects {
-  background-color: #224523;
+  background-color: #0b1d04;
 }
-.page iframe {
-  width: 45%;
-  margin: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 5px 5px 12px 0px #00000040;
-  background-color: #000;
+.page.projects .article .appSection {
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: nowrap;
+}
+@media (max-width: 400px) {
+  .page.projects .article .appSection {
+    flex-wrap: wrap;
+  }
+}
+.page.projects .article .appSection #expo-qr {
+  width: 80%;
+  max-width: 200px;
+  min-width: 100px;
+}
+.page.projects .article .biancaVideos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 .page .article {
   padding: 10px 20px 80px;
