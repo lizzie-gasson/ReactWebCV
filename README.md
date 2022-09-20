@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+## Branching and deployment
+Work on the 'dev' branch and when ready to deploy, merge to 'main'<br />
+Don't forget to 'npm run build' before merging<br />
+Firebase has been set up so the build will be deployed automatically when merged to main<br />
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,8 +44,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-
-## Branching and deployment
-Work on the 'dev' branch and when ready to deploy, merge to 'main'
-Don't forget to 'npm run build' before merging
-Firebase has been set up so the build will be deployed automatically when merged to main
