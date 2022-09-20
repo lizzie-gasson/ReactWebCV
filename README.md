@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### Branching and deployment
+Work on the 'dev' branch and when ready to deploy, merge to 'main'
+Don't forget to 'npm run build' before merging
+Firebase has been set up so the build will be deployed automatically when merged to main
