@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Work on the 'development' branch and when ready to deploy, merge to 'main'<br />
 Don't forget to 'npm run build' before merging<br />
 Firebase has been set up so the build will be deployed automatically when merged to main<br />
-
+  
 ## Available Scripts
 
 In the project directory, you can run:
