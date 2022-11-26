@@ -98,8 +98,11 @@
     max-width: 1100px;
   }
 }
-.page .text-group {
-  margin-bottom: 50px;
+.page .text-section {
+  margin-bottom: 75px;
+}
+.page .text-section .text-group {
+  margin-bottom: 30px;
 }
 .page .work .work-element {
   text-align: left;
