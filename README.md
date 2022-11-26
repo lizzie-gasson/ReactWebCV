@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Branching and deployment
-Work on the 'dev' branch and when ready to deploy, merge to 'main'<br />
+Work on the 'development' branch and when ready to deploy, merge to 'main'<br />
 Don't forget to 'npm run build' before merging<br />
 Firebase has been set up so the build will be deployed automatically when merged to main<br />
 
