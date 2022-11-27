@@ -4,10 +4,15 @@
 @mobile-max: 679px;
 @desktop-min: 1200px;
 @lighter: .5;
-@font-title: 'Abril Fatface', cursive;
-@font-body: 'Source Sans Pro', sans-serif;
+@font-title: 'Gilda Display', serif;
+@font-body: 'Lexend', sans-serif;
 @primary-col: #003135;
 @secondary-col: #249c92;
+@text-dark: #3e3e3e;
+// @text-light: #D2D3C2;
+// @standard-background: #1B1C1E;
+@text-light: #D2D1D4;
+@standard-background: #222125;
 
 
 html{
@@ -27,7 +32,7 @@ body {
     background-size: cover;
     display: flex;
     margin: 0;
-
+    color: @text-light;
     font-family: @font-body;	
 }
 
@@ -54,7 +59,7 @@ h1, h2, h3 {
 
     .header{
         padding: 10px 10px 0;
-        color: #fff;
+        color: @text-light;
         font-family: @font-title;
         position: absolute;
         top: 0;
@@ -121,14 +126,24 @@ h1, h2, h3 {
     }
     
     .page-map-wrapper {
-        width: 100vw;
+        background-color: rgb(255, 0, 128);
     
         .page-map {
             display: flex;
-            overflow-x: overlay;
-            scroll-snap-type: x mandatory;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: overlay;
+            overflow-x: hidden;
+            scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
+            
+            // https://css-tricks.com/pure-css-horizontal-scrolling/
+            transform: rotate(-90deg) translate(-100%);
+            transform-origin: top left;
+            background-color: #000;
+            height: 100vw;
+            width: 100vh;
 
             @media (min-width: @tablet-min){
                 padding: 0;
@@ -137,45 +152,37 @@ h1, h2, h3 {
             .page {
                 scroll-snap-align: start;
                 flex-shrink: 0;
-                width: 100%;
+                width: 100vw;
                 height: 100vh;
-                color: #ffffffcc;
+                // color: #ffffffcc;
                 position: relative;
                 overflow-y: scroll;
                 cursor: pointer;
                 transition: 0.3s;
 
-                &.page-text{
-                    width: 100%;
-                    max-width: 900px;
+                transform: rotate(90deg);
+                margin-bottom: calc(100vw - 100vh);
+                background-color: @standard-background;
 
-                    @media(min-width: @tablet-min){
-                        width: 80%;
-    
-                    }
-                }
-
-    
-                
             }
             
         }
-        .page-map::-webkit-scrollbar {
-            height: 5px;
-        }
-        .page-map::-webkit-scrollbar-thumb {
-            background: #ffffff3d;
-        }
-        .page-map::-webkit-scrollbar-track {
-            background: #ffffff12;
-        }
+        // .page-map::-webkit-scrollbar {
+        //     height: 5px;
+        // }
+        // .page-map::-webkit-scrollbar-thumb {
+        //     background: #ffffff3d;
+        // }
+        // .page-map::-webkit-scrollbar-track {
+        //     background: #ffffff12;
+        // }
     
     }
     
     .navigation{
         @media(min-width: @tablet-min){
             cursor: pointer;
-            color: #fff;
+            color: @text-light;
             text-align: center;
             font-size: 30px;
     
@@ -238,7 +245,7 @@ h1, h2, h3 {
         top: calc(50vh - 30px);
         opacity: @lighter;
         a {
-            color: #fff;
+            color: @text-light;
         }
         &:hover{
             transform: translate(-20px);

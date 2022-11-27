@@ -15,7 +15,6 @@ class ProjectsPage extends React.Component {
                 <h1>Projects</h1>
                 <h2>Development</h2>
 
-                <h3>Conjugation app (in progress)</h3>
                
                 
                 <div className="appSection">
@@ -29,8 +28,9 @@ class ProjectsPage extends React.Component {
                         </div>
                     </div>
                     <div className="sectionTwo">
+                        <h3>Conjugation app (in progress)</h3>
                         <p>I'm working on a small application using React Native, Typescript and Expo. It helps users learn how to conjugate verbs in Spanish and French.</p>
-                        <p>Use the QR code below to try it on your own device using <a href="https://expo.dev/@lizzieg" target="_blank">Expo</a></p>
+                        <p>Use the QR code below to try it on your own device using <a href="https://expo.dev/@lizzieg" target="_blank" rel="noopener noreferrer">Expo</a></p>
                         <div style={{ display: 'flex', alignContent: 'center'}}>
                             <img id="expo-qr" style={{margin: 'auto'}} src={qrCode} alt="QR code expo" width={250}/>
                         </div>
@@ -45,11 +45,11 @@ class ProjectsPage extends React.Component {
                 
                 <h3>Bianca's story - Middlemore foundation</h3>
                 <div className='biancaVideos'>
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F345363779411831%2F&show_text=false&width=560&t=0"  scrolling="no" frameborder="0" allowfullscreen="true" className='videoEmbed' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F345363779411831%2F&show_text=false&width=560&t=0"  scrolling="no" frameBorder="0" allowFullScreen={true} className='videoEmbed' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F2318327965158874%2F&show_text=false&width=560&t=0" scrolling="no" frameborder="0" allowfullscreen="true" className='videoEmbed' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F2318327965158874%2F&show_text=false&width=560&t=0" scrolling="no" frameBorder="0" allowFullScreen={true} className='videoEmbed' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F426783814761441%2F&show_text=false&width=560&t=0"  scrolling="no" frameborder="0" allowfullscreen="true" className='videoEmbed' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F426783814761441%2F&show_text=false&width=560&t=0"  scrolling="no" frameBorder="0" allowFullScreen={true} className='videoEmbed' allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
                 
           
