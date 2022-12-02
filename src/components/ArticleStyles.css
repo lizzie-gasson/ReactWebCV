@@ -27,11 +27,23 @@
   border-radius: 5px;
   box-shadow: 1px 3px 8px 0px #00000040;
 }
+.page .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  max-width: 49%;
+}
+.page .card {
+  border: 1px #D2D1D4 dashed;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
 .page.landing {
   background: url("../assets/photos/IMG_4256.JPG");
   background-size: cover;
   background-position: 35% 20%;
-  color: #D2D1D4;
+  color: #fff;
   margin-top: 500px;
 }
 @media (min-width: 680px) {
@@ -63,6 +75,15 @@
   text-align: center;
   margin-top: 30px;
 }
+.page.about .profile-image {
+  border-radius: 50%;
+  border: 1px #D2D1D4 dashed;
+  display: inline;
+  float: right;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
 .page.projects .article .appSection {
   display: flex;
   margin-bottom: 50px;
@@ -92,18 +113,25 @@
 @media (min-width: 680px) {
   .page .article {
     padding: 60px 100px;
-    max-width: 900px;
+    max-width: 1000px;
   }
 }
 .page .text-section {
   margin-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
 }
-.page .text-section .text-group {
-  margin-bottom: 30px;
+.page .work .work-tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
 }
-.page .work .work-element {
+.page .work .work-tile-container .work-element {
   text-align: left;
-  margin-bottom: 50px;
+  width: 49%;
 }
 .page .imagePage {
   width: 100%;
