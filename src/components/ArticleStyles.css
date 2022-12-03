@@ -181,7 +181,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 10px #222125 solid;
   background-attachment: fixed;
 }
 @media (min-width: 680px) {
