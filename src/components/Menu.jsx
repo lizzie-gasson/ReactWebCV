@@ -1,14 +1,14 @@
-import React, {Button} from "react";
+import React from "react";
 
-export const Menu = (menuOpen, setMenuOpen) => {
+const Menu = ({menuOpen, setMenuOpen}) => {
     return (
             <>
-                {menuOpen && (<div>
-                    <Button>About</Button>
-                    <Button>Skills</Button>
-                    <Button>Projects</Button>
-                    <Button>Work Experience</Button>
-                    <Button onClick={() => {setMenuOpen(false)}}>Close</Button>
+                {menuOpen && (<div className="nav-menu" onClick={() => setMenuOpen(false)}>
+                    <a href='#landing'>Home</a>
+                    <a href='#about'>About</a>
+                    <a href='#skills'>Skills</a>
+                    <a href='#projects'>Projects</a>
+                    <a href='#work'>Work Experience</a>
                 </div>)}
             </>
     )

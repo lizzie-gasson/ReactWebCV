@@ -129,6 +129,7 @@
 .page.projects .article .appSection.project-section .project-text {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 .page.projects .article .appSection.project-section .project-media {
   display: flex;

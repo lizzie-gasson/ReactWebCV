@@ -38,7 +38,7 @@ class PageMap extends React.Component {
 		return (
 			<div className="page-map-wrapper">
 				<div className="page-map">
-					<Page pageType="landing" name="landing" index="0" />
+					<Page ref={React.createRef()} pageType="landing" name="landing" index="0" />
 					<Page pageType="text" name="about" index="1" />
 					<Page pageType="image" name="pic4" index="2" />
 					<Page pageType="text" name="projects" index="3" />

@@ -21,6 +21,15 @@ h2,
 h3 {
   font-family: 'Gilda Display', serif;
 }
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 @media (max-width: 679px) {
   .lge-only {
     display: none;
@@ -97,8 +106,31 @@ h3 {
   height: 22px;
   opacity: 1;
 }
-.frame .page-map-wrapper {
-  background-color: #ff0080;
+.frame .header .contact-links .link.in-front {
+  z-index: 1000;
+}
+.frame .header .nav-menu {
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222125;
+  opacity: 0.8;
+  transition: 0.3s;
+  padding: 50px;
+  height: 100vh;
+}
+.frame .header .nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.frame .header .nav-menu a:hover {
+  transform: translate(10px);
 }
 .frame .page-map-wrapper .page-map {
   display: flex;

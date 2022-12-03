@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import { goHome } from "../utils/utils";
-// import { Menu } from "./Menu";
+import Menu from "./Menu.jsx";
 
 const Header = () => {
-	// const [menuOpen, setMenuOpen] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
 		<div className="header">
@@ -37,9 +36,11 @@ const Header = () => {
 					className="link linkedin"
 					href="https://www.linkedin.com/in/lizziegasson/"
 				></a>
-				{/* <button onClick={() => setMenuOpen(true)}>Menu</button> */}
+				<button className={`menu-button link ${menuOpen ? `in-front` : ``}`} onClick={() => setMenuOpen(!menuOpen)}>
+					<i className={`fas ${menuOpen ? `fa-times` : `fa-bars`}`}></i>
+				</button>
 			</div>
-			{/* <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
+			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 		</div>
 	);
 };

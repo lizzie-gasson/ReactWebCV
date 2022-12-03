@@ -73,8 +73,6 @@ class Page extends React.Component {
 		}
 	}
 
-	//className={"page " + (this.state.inView ? 'active' : '')} <- class to show active page
-	// scrollToPage={this.scrollToPage} onClick={this.scrollToView}
 	render() {
 		return (
 			<div
