@@ -4,7 +4,7 @@ import me from "../assets/me.png";
 class AboutPage extends React.Component {
 	render() {
 		return (
-			<div className="article about">
+			<div id="about" className="article about">
 				<h1>About Me</h1>
 				<img
 					src={me}

@@ -3,7 +3,7 @@ import React from "react";
 class WorkPage extends React.Component {
 	render() {
 		return (
-			<div className="article work">
+			<div id="work" className="article work">
 				<h1>Work and Experience</h1>
 
 				<div className="work-tile-container">

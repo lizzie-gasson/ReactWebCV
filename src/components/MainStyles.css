@@ -31,6 +31,14 @@ h3 {
     display: none;
   }
 }
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.active .hidden {
+  display: block;
+  visibility: visible;
+}
 .frame .header {
   padding: 10px 10px 0;
   color: #fff;

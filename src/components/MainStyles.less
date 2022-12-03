@@ -54,6 +54,17 @@ h1, h2, h3 {
     }
 }
 
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+.active{
+    .hidden{
+        display: block;
+        visibility: visible;
+    }
+}
+
 .frame{
     //background: @primary-col;
 

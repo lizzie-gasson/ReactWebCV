@@ -23,7 +23,8 @@
 }
 .page iframe,
 .page img,
-.page .video-react-poster {
+.page .video-react-video,
+.page .media {
   border-radius: 5px;
   box-shadow: 1px 3px 8px 0px #00000040;
 }
@@ -50,6 +51,13 @@
   .page.landing {
     background-attachment: fixed;
   }
+}
+.page.landing::before {
+  content: '';
+  position: fixed;
+  z-index: -1;
+  background: url(/static/media/IMG_4256.7df9c797.JPG) 0 0 repeat;
+  background-size: contain;
 }
 @media (max-width: 679px) {
   .page.landing .article {
@@ -84,6 +92,19 @@
   padding: 10px;
   margin: 10px;
 }
+.page.skills .card p,
+.page.skills .card ul {
+  display: none;
+  width: 0;
+  opacity: 0;
+  transition: 1s width step-end;
+}
+.page.skills .card:hover p,
+.page.skills .card:hover ul {
+  display: block;
+  opacity: 1;
+  width: 100%;
+}
 .page.projects .article .appSection {
   display: flex;
   margin-bottom: 50px;
@@ -99,6 +120,26 @@
   width: 80%;
   max-width: 200px;
   min-width: 100px;
+  float: right;
+}
+.page.projects .article .appSection.project-section {
+  display: flex;
+  flex-direction: column;
+}
+.page.projects .article .appSection.project-section .project-text {
+  display: flex;
+  flex-direction: row;
+}
+.page.projects .article .appSection.project-section .project-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.page.projects .article .appSection.project-section .project-media .media {
+  width: 30%;
+  min-width: 200px;
 }
 .page.projects .article .biancaVideos {
   display: flex;

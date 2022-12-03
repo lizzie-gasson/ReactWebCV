@@ -1,5 +1,7 @@
 import React from "react";
 import qrCode from "../assets/expo-go.svg";
+import frenchConj from "../assets/conju-app-assets/conj-french.PNG";
+import spanishExp from "../assets/conju-app-assets/explanation-spanish.PNG";
 import walkthrough from "../assets/conju-app-assets/walkthrough.MP4";
 import poster from "../assets/conju-app-assets/home-spanish.PNG";
 import "video-react/dist/video-react.css"; // import css
@@ -10,42 +12,38 @@ import { Player } from "video-react";
 class ProjectsPage extends React.Component {
 	render() {
 		return (
-			<div className="article projects">
+			<div id="projects" className="article projects">
 				<h1>Projects</h1>
 				<h2>Development</h2>
 
-				<div className="appSection card">
-					<div className="sectionOne" style={{ marginRight: 15 }}>
-						<div style={{ width: 250 }}>
-							<Player playsInline poster={poster} src={walkthrough} />
+				<div className="appSection card project-section">
+					<div className="project-text">
+						<div>
+							<img id="expo-qr" src={qrCode} alt="QR code expo" width={250} />
+							<h3>Conjugation app (in progress)</h3>
+							<p>
+								I'm working on a small application using React Native,
+								Typescript and Expo. It helps users learn how to conjugate verbs
+								in Spanish and French.
+							</p>
+							<p>
+								Use the QR code to try it on your own device using{" "}
+								<a
+									href="https://expo.dev/@lizzieg"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Expo
+								</a>
+							</p>
 						</div>
 					</div>
-					<div className="sectionTwo">
-						<h3>Conjugation app (in progress)</h3>
-						<p>
-							I'm working on a small application using React Native, Typescript
-							and Expo. It helps users learn how to conjugate verbs in Spanish
-							and French.
-						</p>
-						<p>
-							Use the QR code below to try it on your own device using{" "}
-							<a
-								href="https://expo.dev/@lizzieg"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Expo
-							</a>
-						</p>
-						<div style={{ display: "flex", alignContent: "center" }}>
-							<img
-								id="expo-qr"
-								style={{ margin: "auto" }}
-								src={qrCode}
-								alt="QR code expo"
-								width={250}
-							/>
+					<div className="project-media">
+						<div className="media" width="100px">
+							<Player playsInline poster={poster} src={walkthrough} />
 						</div>
+						<img className="media" src={frenchConj} />
+						<img className="media" src={spanishExp} />
 					</div>
 				</div>
 
