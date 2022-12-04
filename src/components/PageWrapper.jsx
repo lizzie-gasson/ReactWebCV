@@ -1,5 +1,4 @@
 import React from "react";
-import "./ArticleStyles.css";
 
 const PageWrapper = ({index, name, pageType, children}) => {
 	return (

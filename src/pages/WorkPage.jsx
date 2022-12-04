@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkPage = () => {
 	return (
-		<div id="work" className="article work">
+		<div className="article work">
 			<h1>Work and Experience</h1>
 
 			<div className="work-tile-container">

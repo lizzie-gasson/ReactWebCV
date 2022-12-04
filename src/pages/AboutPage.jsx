@@ -3,7 +3,7 @@ import me from "../assets/me.png";
 
 const AboutPage = () => {
 	return (
-		<div id="about" className="article about">
+		<div className="article about">
 			<h1>About Me</h1>
 			<img
 				src={me}

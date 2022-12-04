@@ -2,7 +2,7 @@ import React from "react";
 
 const LandingPage = () => {
 	return (
-		<div id="landing" className="article landing">
+		<div className="article landing">
 			<h1>Hi, I'm Lizzie!</h1>
 			<div className="landing-text">
 				<p>

@@ -18,24 +18,45 @@ import emmaImage from '.././assets/photos/DSC_0717.jpg'
 import { getDomElement } from "../utils/utils";
 import { FINALINDEX } from "../utils/constants";
 
-const PageMap = (props) => {
-	const {activePage, setActivePage} = props
-	const [image, setImage] = useState(landingImage)
+const PageMap = ({activePage, setActivePage}) => {
+	
+	const [pageMapStyle, setPageMapStyle] = useState({
+		backgroundImage: `url(${landingImage})`,
+		backgroundPosition: '35% 20%'
+	})
 	let scrollOffset = 362.5
 
 	const getBackgroundImage = (offsets, scrollPos) => {
 		if (scrollPos < offsets[0]) {
-			setImage(landingImage)
+			setPageMapStyle({
+				backgroundImage: `url(${landingImage})`,
+				backgroundPosition: '35% 45%'
+			})
 		} else if (scrollPos > offsets[1] && scrollPos < offsets[3]){
-			setImage(birdImage)
+			setPageMapStyle({
+				backgroundImage: `url(${birdImage})`,
+				backgroundPosition: '35% 47%'
+			})
 		} else if (scrollPos > offsets[3] && scrollPos < offsets[5]){
-			setImage(flowerImage)
+			setPageMapStyle({
+				backgroundImage: `url(${flowerImage})`,
+				backgroundPosition: '35% 22%'
+			})
 		} else if (scrollPos > offsets[5] && scrollPos < offsets[7]){
-			setImage(paperImage)
+			setPageMapStyle({
+				backgroundImage: `url(${paperImage})`,
+				backgroundPosition: '35% 10%'
+			})
 		} else if (scrollPos > offsets[7]){
-			setImage(emmaImage)
+			setPageMapStyle({
+				backgroundImage: `url(${emmaImage})`,
+				backgroundPosition: '35% 20%'
+			})
 		} else {
-			setImage(landingImage)
+			setPageMapStyle({
+				backgroundImage: `url(${landingImage})`,
+				backgroundPosition: '35% 45%'
+			})
 		}
 	}
 
@@ -60,7 +81,7 @@ const PageMap = (props) => {
 
 	return (
 		<div className="page-map-wrapper">
-			<div onScroll={handleScroll} className="page-map" style={{backgroundImage: `url(${image})`}}>
+			<div onScroll={handleScroll} className="page-map" style={pageMapStyle}>
 				<PageWrapper pageType="landing" name="landing" index="0">
 					<LandingPage />
 				</PageWrapper>
@@ -68,25 +89,25 @@ const PageMap = (props) => {
 					<AboutPage />
 				</PageWrapper>
 				<PageWrapper pageType="image" name="pic1" index="2">
-					<ImagePage name="pic1" index="2" />
+					<ImagePage index="2" />
 				</PageWrapper>
 				<PageWrapper pageType="text" name="projects" index="3">
 					<ProjectsPage />
 				</PageWrapper>
 				<PageWrapper pageType="image" name="pic3" index="4">
-					<ImagePage name="pic3" index="4" />
+					<ImagePage index="4" />
 				</PageWrapper>
 				<PageWrapper pageType="text" name="skills" index="5">
 					<SkillsPage />
 				</PageWrapper>
 				<PageWrapper pageType="image" name="pic2" index="6">
-					<ImagePage name="pic2" index="6" />
+					<ImagePage index="6" />
 				</PageWrapper>
 				<PageWrapper pageType="text" name="work" index="7">
 					<WorkPage />
 				</PageWrapper>
 				<PageWrapper pageType="image" name="pic4" index="8">
-					<ImagePage name="pic4" index="8" />
+					<ImagePage index="8" />
 				</PageWrapper>
 			</div>
 		</div>

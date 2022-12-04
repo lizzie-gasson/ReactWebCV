@@ -1,11 +1,10 @@
 import React from 'react';
 import {BackToStartButton} from '../components/BackToStartButton'
 
-const ImagePage = (props) => {
-    const { name, index } = props
+const ImagePage = ({index}) => {
     return (
         <>
-            <div className={`imagePage ${name}`}></div>
+            <div className="imagePage"></div>
                 {index === "8" && (
                 <BackToStartButton />
             )}

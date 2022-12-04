@@ -11,7 +11,7 @@ import { Player } from "video-react";
 
 const ProjectsPage = () => {
 	return (
-		<div id="projects" className="article projects">
+		<div className="article projects">
 			<h1>Projects</h1>
 			<h2>Development</h2>
 
@@ -38,11 +38,11 @@ const ProjectsPage = () => {
 					</div>
 				</div>
 				<div className="project-media">
-					<div className="media" width="100px">
+					<div className="media mobile-image" width="100px">
 						<Player playsInline poster={poster} src={walkthrough} />
 					</div>
-					<img className="media" src={frenchConj} />
-					<img className="media" src={spanishExp} />
+					<img className="media mobile-image" src={frenchConj} />
+					<img className="media mobile-image" src={spanishExp} />
 				</div>
 			</div>
 
@@ -108,7 +108,7 @@ const ProjectsPage = () => {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="https://drive.google.com/file/d/1he0yl_5e8Opk03C4REOv6uOZ96baReUL/view?usp=sharing"
+								href="https://drive.google.com/file/d/1Wz_LeFzj-8aUT5fuA5FYfUs9QnzyNMOP/view?usp=share_link"
 							>
 								YDA Project 2014
 							</a>
@@ -117,7 +117,7 @@ const ProjectsPage = () => {
 							<a
 								target="_blank"
 								rel="noopener noreferrer"
-								href="https://drive.google.com/file/d/1_MUZEaLg-raoCDHoaB9x46hymGsn8h3h/view?usp=sharing"
+								href="https://drive.google.com/file/d/1qCe-RPNbngV54TCwgjLR2yUq0wmfaDCZ/view?usp=share_link"
 							>
 								YDA Project 2015
 							</a>
