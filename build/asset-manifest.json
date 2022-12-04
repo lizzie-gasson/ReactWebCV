@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a7db8d7.chunk.css",
-    "main.js": "/static/js/main.846e14b6.chunk.js",
-    "main.js.map": "/static/js/main.846e14b6.chunk.js.map",
+    "main.css": "/static/css/main.df88b3fa.chunk.css",
+    "main.js": "/static/js/main.9760dda0.chunk.js",
+    "main.js.map": "/static/js/main.9760dda0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cc60cf41.js",
     "runtime-main.js.map": "/static/js/runtime-main.cc60cf41.js.map",
     "static/css/2.5f3e10d3.chunk.css": "/static/css/2.5f3e10d3.chunk.css",
-    "static/js/2.502d4906.chunk.js": "/static/js/2.502d4906.chunk.js",
-    "static/js/2.502d4906.chunk.js.map": "/static/js/2.502d4906.chunk.js.map",
+    "static/js/2.d929ae2c.chunk.js": "/static/js/2.d929ae2c.chunk.js",
+    "static/js/2.d929ae2c.chunk.js.map": "/static/js/2.d929ae2c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.30e5064b340edba8b7356e70cfd092fa.js": "/precache-manifest.30e5064b340edba8b7356e70cfd092fa.js",
+    "precache-manifest.61d62019cff55bce343a159efb58036c.js": "/precache-manifest.61d62019cff55bce343a159efb58036c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.5f3e10d3.chunk.css.map": "/static/css/2.5f3e10d3.chunk.css.map",
-    "static/css/main.7a7db8d7.chunk.css.map": "/static/css/main.7a7db8d7.chunk.css.map",
-    "static/js/2.502d4906.chunk.js.LICENSE.txt": "/static/js/2.502d4906.chunk.js.LICENSE.txt",
-    "static/media/ArticleStyles.css": "/static/media/IMG_4256.7df9c797.JPG",
+    "static/css/main.df88b3fa.chunk.css.map": "/static/css/main.df88b3fa.chunk.css.map",
+    "static/js/2.d929ae2c.chunk.js.LICENSE.txt": "/static/js/2.d929ae2c.chunk.js.LICENSE.txt",
+    "static/media/DSC_0286.JPG": "/static/media/DSC_0286.ff7e677b.JPG",
+    "static/media/DSC_0421.jpg": "/static/media/DSC_0421.42495c82.jpg",
+    "static/media/DSC_0717.jpg": "/static/media/DSC_0717.9ba0b629.jpg",
+    "static/media/DSC_0752.JPG": "/static/media/DSC_0752.268f9cda.JPG",
+    "static/media/IMG_4256.JPG": "/static/media/IMG_4256.cf5621f5.JPG",
     "static/media/MainStyles.css": "/static/media/linkedin-white.adc5e544.svg",
     "static/media/conj-french.PNG": "/static/media/conj-french.ae40c730.PNG",
     "static/media/explanation-spanish.PNG": "/static/media/explanation-spanish.cfcc9953.PNG",
@@ -26,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.cc60cf41.js",
     "static/css/2.5f3e10d3.chunk.css",
-    "static/js/2.502d4906.chunk.js",
-    "static/css/main.7a7db8d7.chunk.css",
-    "static/js/main.846e14b6.chunk.js"
+    "static/js/2.d929ae2c.chunk.js",
+    "static/css/main.df88b3fa.chunk.css",
+    "static/js/main.9760dda0.chunk.js"
   ]
 }
