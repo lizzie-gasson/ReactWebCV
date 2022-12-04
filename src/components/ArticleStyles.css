@@ -41,7 +41,6 @@
   padding: 10px 15px;
 }
 .page.landing {
-  background: url("../assets/photos/IMG_4256.JPG");
   background-size: cover;
   background-position: 35% 20%;
   color: #fff;
@@ -51,13 +50,6 @@
   .page.landing {
     background-attachment: fixed;
   }
-}
-.page.landing::before {
-  content: '';
-  position: fixed;
-  z-index: -1;
-  background: url(/static/media/IMG_4256.7df9c797.JPG) 0 0 repeat;
-  background-size: contain;
 }
 @media (max-width: 679px) {
   .page.landing .article {
@@ -187,19 +179,4 @@
   .page .imagePage {
     background-attachment: fixed;
   }
-}
-.page .imagePage.pic1 {
-  background-image: url("../assets/photos/DSC_0421.jpg");
-}
-.page .imagePage.pic2 {
-  background-image: url("../assets/photos/DSC_0728.jpg");
-  background-position: 75% 30%;
-}
-.page .imagePage.pic3 {
-  background-image: url("../assets/photos/DSC_0752.JPG");
-  background-position: left;
-}
-.page .imagePage.pic4 {
-  background-image: url("../assets/photos/DSC_0286.JPG");
-  background-position: 30%;
 }

@@ -123,16 +123,19 @@ button {
   padding: 50px;
   height: 100vh;
 }
-.frame .header .nav-menu a {
+.frame .header .nav-menu button {
   color: #fff;
   text-decoration: none;
   margin-bottom: 30px;
   transition: 0.3s;
+  text-align: left;
 }
-.frame .header .nav-menu a:hover {
+.frame .header .nav-menu button:hover {
   transform: translate(10px);
 }
 .frame .page-map-wrapper .page-map {
+  background-size: cover;
+  background-position: 35% 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,6 +166,8 @@ button {
   transition: 0.3s;
   transform: rotate(90deg);
   margin-bottom: calc(100vw - 100vh);
+}
+.frame .page-map-wrapper .page-map .page-text {
   background-color: #222125;
 }
 @media (min-width: 680px) {
@@ -192,13 +197,13 @@ button {
   .frame .navigation .nav-left:hover {
     transform: translate(-10px);
   }
-  .frame .navigation .nav-left.hide-nav {
+  .frame .navigation .nav-left.hide {
     transform: translate(-100px);
   }
   .frame .navigation .nav-right {
     right: 0;
   }
-  .frame .navigation .nav-right.hide-nav {
+  .frame .navigation .nav-right.hide {
     transform: translate(100px);
   }
   .frame .navigation .nav-right.landing-nav {

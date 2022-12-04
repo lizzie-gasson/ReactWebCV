@@ -1,20 +1,14 @@
 import ReactDOM from "react-dom";
 
 // Navigation
-export const goHome = () =>
-	ReactDOM.findDOMNode(window.pageComponent[0]).scrollIntoView();
+export const goToPage = (id) => {
+	const pageList = document.getElementsByClassName("page");
+	for (let i = 0; i < pageList.length; i++) {
+		const element = pageList[i];
+		if (element.classList.contains(`index-${id}`)) element.scrollIntoView();
+	}
+};
 
-export const executeScroll = (ref) => ref.current.scrollIntoView();
-// DO THIS !!
-// export const goToPage = (id) => {
-// 	const element = document.getElementById(id);
-// 	const pos = ReactDOM.findDOMNode(element).getBoundingClientRect();
-
-// 	if (pos.left === 0 || (pos.left < 1 && pos.left > -1)) {
-// 		this.setState({ inView: true });
-// 		console.log("set url", this.props.name);
-// 		window.pageComponent.active = this;
-// 	} else {
-// 		this.setState({ inView: false });
-// 	}
-// };
+export const goHome = () => goToPage(0);
+export const getDomElement = (i) =>
+	document.getElementsByClassName(`index-${i}`)[0];

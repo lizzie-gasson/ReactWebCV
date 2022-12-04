@@ -160,13 +160,14 @@ button {
             transition: 0.3s;
             padding: 50px;
             height: 100vh;
-            a{
+            button{
                 color: #fff;
                 text-decoration: none;
                 margin-bottom: 30px;
                 transition: 0.3s;
+                text-align: left;
             }
-            a:hover {
+            button:hover {
                 transform: translate(10px);
 
             }
@@ -177,6 +178,9 @@ button {
         // background-color: rgb(255, 0, 128);
     
         .page-map {
+            background-size: cover;
+            background-position: 35% 20%;
+
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -192,6 +196,7 @@ button {
             background-color: #000;
             height: 100vw;
             width: 100vh;
+
 
             @media (min-width: @tablet-min){
                 padding: 0;
@@ -210,6 +215,9 @@ button {
 
                 transform: rotate(90deg);
                 margin-bottom: calc(100vw - 100vh);
+
+            }
+            .page-text{
                 background-color: @standard-background;
 
             }
@@ -253,13 +261,13 @@ button {
                 &:hover{
                     transform: translate(-10px);
                 }
-                &.hide-nav{
+                &.hide{
                     transform: translate(-100px);
                 }
             }
             .nav-right{
                 right: 0;
-                &.hide-nav{
+                &.hide{
                     transform: translate(100px);
                 }
                 &.landing-nav{
