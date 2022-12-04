@@ -4,8 +4,6 @@ import PageMap from './PageMap';
 import ReactDOM from 'react-dom';
 
 class Navigation extends React.Component {
-
-
     
     prevPage = () => {
         var page = parseInt(window.pageComponent.active.props.index);
@@ -19,7 +17,6 @@ class Navigation extends React.Component {
         if (page < window.pageComponent.length - 1){
             this.goToPage(page + 1);
         }
-        
     }
 
     goToPage(page) {
@@ -27,32 +24,15 @@ class Navigation extends React.Component {
         ReactDOM.findDOMNode(window.pageComponent[i]).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
     }
 
-    hoverLeft(e) {
-        $('.page.active').addClass("hoverLeft");
-    }
-
-
-    hoverRight(e) {
-        $('.page.active').addClass("hoverRight");
-    }
-
-
-
     render () {
         return (
             <div className="navigation">
-                <div 
-                    onClick={this.prevPage} 
-                    //onMouseEnter={() => $('.page.active').addClass("hoverLeft")}
-                    //onMouseLeave={() => $('.page.active').removeClass("hoverLeft")}
-                    className="nav-left hide"
-                ><i className="fas fa-arrow-alt-circle-left"></i></div>
-                <div 
-                    onClick={this.nextPage} 
-                    // onMouseEnter={() => $('.page.active').addClass("hoverRight")}
-                    // onMouseLeave={() => $('.page.active').removeClass("hoverRight")}
-                    className="nav-right landing-nav"
-                ><i className="fas fa-arrow-alt-circle-right"></i></div>
+                <div onClick={this.prevPage} className="nav-left hide" >
+                    <i className="fas fa-arrow-alt-circle-left"></i>
+                </div>
+                <div onClick={this.nextPage} className="nav-right landing-nav" >
+                    <i className="fas fa-arrow-alt-circle-right"></i>
+                </div>
                 
             </div>
             
