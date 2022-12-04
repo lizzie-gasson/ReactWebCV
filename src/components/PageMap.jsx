@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 import $ from "jquery";
 
 import PageWrapper from "./PageWrapper";
@@ -19,12 +20,11 @@ import { getDomElement } from "../utils/utils";
 import { FINALINDEX } from "../utils/constants";
 
 const PageMap = ({activePage, setActivePage}) => {
-	
+	const [scrollOffset, setScrollOffset] = useState(0)
 	const [pageMapStyle, setPageMapStyle] = useState({
 		backgroundImage: `url(${landingImage})`,
 		backgroundPosition: '35% 20%'
 	})
-	let scrollOffset = 362.5
 
 	const getBackgroundImage = (offsets, scrollPos) => {
 		if (scrollPos < offsets[0]) {
@@ -60,24 +60,33 @@ const PageMap = ({activePage, setActivePage}) => {
 		}
 	}
 
-	const getMatchingElement = (list, scrollPos) => {
-		for (let index = 0; index < list.length; index++) {
-			const elementOffset = list[index]
-			if (scrollPos >= elementOffset - scrollOffset) {
+	const getMatchingElement = (pagePositionList, scrollPos) => {
+		for (let index = 0; index < pagePositionList.length; index++) {
+			const elementOffset = pagePositionList[index]
+			if (scrollPos >= elementOffset + scrollOffset) {
 				setActivePage(index)
 			}
 		}
 	}
 
+	const getOffset = () => {
+		setScrollOffset(document.getElementsByClassName(`index-0`)[0].offsetLeft)
+	}
+
 	const handleScroll = (e) => {
-		let offsets = []
+		let pagePositionList = []
 		const scrollPos = e.currentTarget.scrollTop
 		for (let index = 0; index < FINALINDEX + 1; index++) {
-			offsets[index] = getDomElement(index).offsetTop
+			pagePositionList[index] = getDomElement(index).offsetTop + scrollOffset
 		}
-		getMatchingElement(offsets, scrollPos)
-		getBackgroundImage(offsets, scrollPos)
+		getMatchingElement(pagePositionList, scrollPos)
+		getBackgroundImage(pagePositionList, scrollPos)
+		getOffset()
 	}
+
+	useEffect(() => {
+		getOffset()
+	},[]);
 
 	return (
 		<div className="page-map-wrapper">

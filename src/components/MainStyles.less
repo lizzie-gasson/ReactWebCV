@@ -209,6 +209,11 @@ button {
 
                 transform: rotate(90deg);
                 margin-bottom: calc(100vw - 100vh);
+                padding-bottom: 30px;
+
+                @media (min-width: @tablet-min){
+                    padding-bottom: 0;
+                }
 
             }
             .page-text{
@@ -225,9 +230,9 @@ button {
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
-                border: 5px @standard-background solid;
                 @media (min-width: @tablet-min){
                     background-attachment: fixed;
+                    border: 5px @standard-background solid;
                 }
             }
     
