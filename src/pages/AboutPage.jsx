@@ -16,7 +16,7 @@ const AboutPage = () => {
 				particular passion for front end development and making a user's
 				online experience as simple, efficient and enjoyable as possible. I
 				finished studying computer science at the University of Auckland in
-				2018, and after that I joined IAG where I have gained lots of
+				2018, and after that I joined IAG where I gained lots of
 				experience working on web portals, being part of a scrum team, and
 				also learning more about the insurance industry. I am always keen to
 				learn something new, and I strive to find the best and most efficient

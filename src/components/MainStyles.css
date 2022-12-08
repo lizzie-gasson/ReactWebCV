@@ -336,6 +336,46 @@ button {
   border-radius: 5px;
   padding: 10px 15px;
 }
+.page .tabComponent {
+  transition: 0.3s;
+}
+.page .tabComponent .tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+.page .tabComponent .tabs .tab {
+  transition: 0.3s;
+  box-shadow: none;
+}
+.page .tabComponent .tabs .tab:hover {
+  box-shadow: 1px 3px 8px 0px #00000040;
+  transform: rotate(5deg);
+}
+.page .tabComponent .tabs.showing-text .tab {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+.page .tabComponent .tabs.showing-text .tab:hover {
+  opacity: 0.6;
+  box-shadow: 1px 3px 8px 0px #00000040;
+}
+.page .tabComponent .tabs.showing-text .tab.active {
+  opacity: 1;
+}
+.page .tabComponent .content {
+  transition: 1s;
+  max-height: 0;
+  transition: max-height 0.8s ease-out;
+  overflow: hidden;
+}
+.page .tabComponent .content.showing-text {
+  padding: 10px 0;
+  border-radius: 5px;
+  max-height: 500px;
+  transition: max-height 0.8s ease-in;
+}
 .page.landing {
   background-size: cover;
   background-position: 35% 20%;
@@ -458,15 +498,10 @@ button {
 }
 .page .work .work-tile-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   gap: 15px;
 }
 .page .work .work-tile-container .work-element {
   text-align: left;
-}
-@media (min-width: 680px) {
-  .page .work .work-tile-container .work-element {
-    width: 49%;
-  }
 }

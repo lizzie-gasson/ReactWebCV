@@ -9,7 +9,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Full Stack Engineer - Milanote</h2>
 					<h3>November 2022 - Now</h3>
-					<p>
+					<p className="work-element-description">
 						I am currently working on the{" "}
 						<a
 							target="_blank"
@@ -26,7 +26,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Developer II - IAG AU</h2>
 					<h3>April 2021 - November 2022</h3>
-					<p>
+					<p className="work-element-description">
 						In the first scrum team I spent lots of time working with
 						databases using Microsoft SQL Server. In this team I had a large
 						input in changing the processes to improve organisation and
@@ -45,7 +45,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Developer I - IAG NZ</h2>
 					<h3>July 2018 - April 2021</h3>
-					<p>
+					<p className="work-element-description">
 						I started working at IAG as a graduate during my final semester of
 						study. At IAG in New Zealand I spent my time in scrum teams
 						working on quote and buy portals, primarily front end work but I
@@ -66,7 +66,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Content creator</h2>
 					<h3>2019 - 2020</h3>
-					<p>
+					<p className="work-element-description">
 						After working as a photographer for many years, I used my skills
 						to do a few jobs creating video and photo content for different
 						companies. In 2020 I worked with Daikin on their healthy homes
@@ -83,7 +83,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Sales assistant - Zara</h2>
 					<h3>Dec 2016 – July 2018</h3>
-					<p>
+					<p className="work-element-description">
 						At Zara, I worked with a big team of people. I often had to work
 						to complete tasks as a group, other times I worked independently,
 						always to strict time targets. Quite often I had to decide on my
@@ -97,7 +97,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Tutor - MyTuition</h2>
 					<h3>June 2016 – Dec 2016</h3>
-					<p>
+					<p className="work-element-description">
 						I tutored AS and IGCSE maths during my first year at university.
 						This helped me with my organization skills as I had to prepare
 						lessons for the students as well as following up after with
@@ -108,7 +108,7 @@ const WorkPage = () => {
 				<div className="work-element card">
 					<h2>Photographer - KJA Photography</h2>
 					<h3>2014 – 2017</h3>
-					<p>
+					<p className="work-element-description">
 						As a photographer for KJA I worked at events such as weddings,
 						balls and even New Zealand Fashion Week. At smaller events I would
 						go by myself to take the photos, at events like balls I worked in

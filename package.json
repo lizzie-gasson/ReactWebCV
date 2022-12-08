@@ -10,9 +10,12 @@
     "firebase-admin": "^9.4.1",
     "firebase-functions": "^3.11.0",
     "jquery": "^3.5.1",
+    "lodash": "^4.17.21",
+    "lodash.isnil": "^4.0.0",
     "pre-commit": "^1.2.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-html-parser": "^2.0.2",
     "react-scripts": "3.4.3",
     "redux": "^4.2.0",
     "video-react": "^0.15.0"
@@ -24,7 +27,9 @@
     "eject": "react-scripts eject",
     "build-project": "npm run build"
   },
-  "pre-commit": [ "build-project" ],
+  "pre-commit": [
+    "build-project"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
