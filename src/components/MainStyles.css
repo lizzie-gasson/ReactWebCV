@@ -324,7 +324,6 @@ button {
 .page a {
   color: #ffd5eb;
 }
-.page iframe,
 .page img {
   border-radius: 5px;
   box-shadow: 1px 3px 8px 0px #00000040;
@@ -460,6 +459,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 @media (min-width: 680px) {
   .page.projects .article .appSection .appDesc {
@@ -484,27 +484,25 @@ button {
 }
 .page.projects .article .appSection .mobile-image {
   position: relative;
-  width: 200px;
+  width: 230px;
   height: 100%;
+  margin-bottom: 30px;
 }
 .page.projects .article .appSection .mobile-image::before {
   content: "";
   top: 0;
-  right: calc(50% - 35px);
+  right: calc(50% - 45px);
   position: absolute;
   display: block;
-  height: 22px;
-  width: 70px;
+  height: 25px;
+  width: 85px;
   background-color: #000;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 13px 13px;
   z-index: 99;
 }
 .page.projects .article .appSection .mobile-image .mobile-border {
   border: 7px solid black;
   border-radius: 30px;
-}
-.page.projects .article .appSection .mobile-image .mobile-border img {
-  width: 250px;
 }
 .page.projects .article .appSection .mobile-image .mobile-border .video-react,
 .page.projects .article .appSection .mobile-image .mobile-border .video-react-video,
@@ -529,18 +527,40 @@ button {
 }
 @media (min-width: 680px) {
   .page.projects .article .appSection.project-section .project-media {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 .page.projects .article .appSection.project-section .project-media .media {
   width: 30%;
-  min-width: 200px;
+  min-width: 230px;
 }
 .page.projects .article .biancaVideos {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+}
+.page.projects .article .biancaVideos .videoEmbed {
+  height: 207px;
+  width: 370px;
+}
+@media (min-width: 560px) {
+  .page.projects .article .biancaVideos .videoEmbed {
+    height: 300px;
+    width: 530px;
+  }
+}
+@media (min-width: 560px) and (min-width: 900px) {
+  .page.projects .article .biancaVideos .videoEmbed {
+    height: 370px;
+    width: 630px;
+  }
+}
+.page.projects .article .biancaVideos iframe #root {
+  border-radius: 5px;
+  box-shadow: 1px 3px 8px 0px #00000040 !important;
 }
 .page .article {
   padding: 10px 20px 80px;

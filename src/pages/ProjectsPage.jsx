@@ -13,6 +13,12 @@ import HorizontalScroll from "../components/HorizontalScroll";
 
 
 const ProjectsPage = () => {
+	const getVideoHeight = () => {
+		// const vidHeight = document.querySelector('.iframe')?.scrollHeight;
+		// console.log(vidHeight)
+		const height = 200
+		return `${height}px`
+	}
 	return (
 		<div className="article projects">
 			<h1>Projects</h1>
@@ -40,7 +46,7 @@ const ProjectsPage = () => {
 							</p>
 						</div>
 						<a href="https://expo.dev/@lizzieg/conju-app" target="_blank" rel="noopener noreferrer">
-							<img id="expo-qr" src={qrCode} alt="QR code expo" width={250} />
+							<img id="expo-qr" src={qrCode} alt="QR code expo" width={300} />
 						</a>
 						
 					</div>
@@ -64,14 +70,15 @@ const ProjectsPage = () => {
 
 			<h2>Photography and film</h2>
 
-			<div className="card">
+			<div>
 				<h3>Bianca's story - Middlemore foundation</h3>
-				{/* <div className="biancaVideos"> */}
-				<HorizontalScroll>
+				<div className="biancaVideos">
+				{/* <HorizontalScroll> */}
 					<iframe
 						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F345363779411831%2F&show_text=false&width=560&t=0"
 						scrolling="no"
 						frameBorder="0"
+						height={getVideoHeight()}
 						allowFullScreen={true}
 						className="videoEmbed"
 						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
@@ -81,6 +88,7 @@ const ProjectsPage = () => {
 						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F2318327965158874%2F&show_text=false&width=560&t=0"
 						scrolling="no"
 						frameBorder="0"
+						height={getVideoHeight()}
 						allowFullScreen={true}
 						className="videoEmbed"
 						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
@@ -90,13 +98,14 @@ const ProjectsPage = () => {
 						src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmiddlemorefoundation%2Fvideos%2F426783814761441%2F&show_text=false&width=560&t=0"
 						scrolling="no"
 						frameBorder="0"
+						height={getVideoHeight()}
 						allowFullScreen={true}
 						className="videoEmbed"
 						allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
 					></iframe>
-				</HorizontalScroll>
+				{/* </HorizontalScroll> */}
 					
-				{/* </div> */}
+				</div>
 			</div>
 
 			<h3>Others</h3>

@@ -23,7 +23,7 @@ const Tabs = (props) => {
                 {children.map((element, index) => {
                     return (
                         <div key={index} className={`text-group card tab ${activeTab === index ? `active` : ``}`} onClick={() => handleClick(index)}>
-                            <h3>{element.props.name}</h3>
+                            <h4>{element.props.name}</h4>
                         </div>
                     );
                 })}

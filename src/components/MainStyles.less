@@ -374,7 +374,7 @@ button {
 	a {
 		color: @text-light;
 	}
-	iframe,
+
 	img {
 		border-radius: 5px;
 		box-shadow: @box-shadow;
@@ -537,6 +537,7 @@ button {
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
+					gap: 10px;
 
 					@media (min-width: @tablet-min) {
 						flex-direction: row;
@@ -561,29 +562,26 @@ button {
 
 				.mobile-image {
 					position: relative;
-					width: 200px;
+					width: 230px;
 					height: 100%;
+					margin-bottom: 30px;
 
 					&::before {
 						content: "";
 						top: 0;
-						right: calc(50% - 35px);
+						right: calc(50% - 45px);
 						position: absolute;
 						display: block;
-						height: 22px;
-						width: 70px;
+						height: 25px;
+						width: 85px;
 						background-color: #000;
-						border-radius: 0 0 10px 10px;
+						border-radius: 0 0 13px 13px;
 						z-index: 99;
 					}
 
 					.mobile-border {
 						border: 7px solid black;
 						border-radius: 30px;
-
-						img {
-							width: 250px;
-						}
 
 						.video-react,
 						.video-react-video,
@@ -611,12 +609,12 @@ button {
 						flex-wrap: wrap;
 
 						@media (min-width: @tablet-min) {
-							justify-content: space-between;
+							justify-content: space-around;
 						}
 
 						.media {
 							width: 30%;
-							min-width: 200px;
+							min-width: 230px;
 						}
 					}
 				}
@@ -624,8 +622,32 @@ button {
 			.biancaVideos {
 				display: flex;
 				flex-wrap: wrap;
+				flex-direction: column;
 				justify-content: center;
+				align-items: center;
 				gap: 10px;
+
+				.videoEmbed {
+					height: 207px;
+					width: 370px;
+
+					@media (min-width: 560px) {
+						height: 300px;
+						width: 530px;
+
+						@media (min-width: 900px) {
+							height: 370px;
+							width: 630px;
+						}
+					}
+				}
+
+				iframe {
+					#root {
+						border-radius: 5px;
+						box-shadow: @box-shadow!important;
+					}
+				}
 			}
 		}
 	}
