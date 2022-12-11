@@ -19,30 +19,32 @@ import emmaImage from '.././assets/photos/DSC_0717.jpg'
 import { getDomElement } from "../utils/utils";
 import { FINALINDEX } from "../utils/constants";
 
-const PageMap = ({activePage, setActivePage}) => {
+const PageMap = ({ setActivePage }) => {
 	const [scrollOffset, setScrollOffset] = useState(0)
 	const [pageMapStyle, setPageMapStyle] = useState({
 		backgroundImage: `url(${landingImage})`,
-		backgroundPosition: '35% 20%'
+		backgroundPosition: '60% 20%'
 	})
 
 	const getBackgroundImage = (offsets, scrollPos) => {
+		const betweenPages = (a, b) => scrollPos + 1 >= offsets[a] && scrollPos + 1 < offsets[b]
+
 		if (scrollPos < offsets[0]) {
 			setPageMapStyle({
 				backgroundImage: `url(${landingImage})`,
-				backgroundPosition: '35% 45%'
+				backgroundPosition: '60% 45%'
 			})
-		} else if (scrollPos > offsets[1] && scrollPos < offsets[3]){
+		} else if (betweenPages(1, 3)){
 			setPageMapStyle({
 				backgroundImage: `url(${birdImage})`,
 				backgroundPosition: '35% 47%'
 			})
-		} else if (scrollPos > offsets[3] && scrollPos < offsets[5]){
+		} else if (betweenPages(3, 5)){
 			setPageMapStyle({
 				backgroundImage: `url(${flowerImage})`,
 				backgroundPosition: '35% 22%'
 			})
-		} else if (scrollPos > offsets[5] && scrollPos < offsets[7]){
+		} else if (betweenPages(5, 7)){
 			setPageMapStyle({
 				backgroundImage: `url(${paperImage})`,
 				backgroundPosition: '35% 10%'
@@ -55,7 +57,7 @@ const PageMap = ({activePage, setActivePage}) => {
 		} else {
 			setPageMapStyle({
 				backgroundImage: `url(${landingImage})`,
-				backgroundPosition: '35% 45%'
+				backgroundPosition: '60% 45%'
 			})
 		}
 	}
