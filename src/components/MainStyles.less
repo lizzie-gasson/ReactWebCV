@@ -399,6 +399,9 @@ button {
 
 	.tabComponent {
 		transition: 0.3s;
+		max-width: 100%;
+		overflow: scroll;
+		padding: 10px;
 
 		.tabs {
 			display: flex;
@@ -409,6 +412,7 @@ button {
 			.tab {
 				transition: 0.3s;
 				box-shadow: none;
+				padding: 10px !important;
 
 				&:hover {
 					box-shadow: @box-shadow;
@@ -627,17 +631,24 @@ button {
 				align-items: center;
 				gap: 10px;
 
+				// temporarily choosing a bunch of different sizes until I can calculate the height
+				// of the video in the iframe accurately
 				.videoEmbed {
-					height: 207px;
-					width: 370px;
+					height: 180px;
+					width: 300px;
 
-					@media (min-width: 560px) {
-						height: 300px;
-						width: 530px;
+					@media (min-width: 440px) {
+						height: 207px;
+						width: 370px;
 
-						@media (min-width: 900px) {
-							height: 370px;
-							width: 630px;
+						@media (min-width: 560px) {
+							height: 300px;
+							width: 530px;
+
+							@media (min-width: 900px) {
+								height: 370px;
+								width: 630px;
+							}
 						}
 					}
 				}
